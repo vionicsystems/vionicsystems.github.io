@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -610,3 +610,333 @@ function sendEnquiry(event) {
 </body>
 </html>
 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vionic Systems | Industrial Automation & Engineering</title>
+<meta name="description" content="Vionic Systems provides industrial automation products, PLCs, VFDs, sensors, control panels, robotics and machine vision solutions in India.">
+
+<style>
+:root {
+  --navy: #101f35;
+  --blue: #174b80;
+  --orange: #f28b30;
+  --light: #f4f7fb;
+  --text: #263448;
+  --muted: #68778a;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--text);
+  line-height:1.6;
+}
+a { text-decoration:none; color:inherit; }
+.container { width:90%; max-width:1160px; margin:auto; }
+
+/* Navigation */
+header {
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 15px rgba(0,0,0,.07);
+}
+nav {
+  min-height:76px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:25px;
+  font-size:14px;
+  font-weight:600;
+}
+.nav-links a:hover { color:var(--orange); }
+.nav-btn {
+  background:var(--orange);
+  color:white;
+  padding:11px 19px;
+  border-radius:5px;
+}
+
+/* Hero */
+.hero {
+  background:linear-gradient(110deg,rgba(10,25,45,.97),rgba(20,58,94,.87)),
+  url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1800");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:115px 0 125px;
+}
+.hero-content { max-width:720px; }
+.eyebrow {
+  color:var(--orange);
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+.hero h1 {
+  font-size:clamp(38px,6vw,64px);
+  line-height:1.12;
+  margin:20px 0;
+}
+.hero h1 span { color:var(--orange); }
+.hero p {
+  color:#d5dfeb;
+  font-size:17px;
+  max-width:620px;
+  margin-bottom:32px;
+}
+.btn {
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:5px;
+  font-weight:bold;
+  margin:5px 8px 5px 0;
+  transition:.2s;
+}
+.btn-orange { background:var(--orange); color:white; }
+.btn-outline { border:1px solid white; color:white; }
+.btn:hover { transform:translateY(-3px); }
+
+/* General sections */
+section { padding:85px 0; }
+.section-heading { text-align:center; margin-bottom:45px; }
+.section-heading .eyebrow { margin-bottom:10px; }
+.section-heading h2 {
+  font-size:34px;
+  color:var(--navy);
+  margin-bottom:12px;
+}
+.section-heading p {
+  max-width:650px;
+  margin:auto;
+  color:var(--muted);
+}
+
+/* About */
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+.about-image {
+  min-height:380px;
+  border-radius:10px;
+  background:url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1000") center/cover;
+}
+.about-text h2 {
+  font-size:34px;
+  color:var(--navy);
+  line-height:1.2;
+  margin:15px 0;
+}
+.about-text p { color:var(--muted); margin:15px 0; }
+.director-tag {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
+  background: #e8edf3;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.check-list { list-style:none; margin-top:20px; }
+.check-list li { margin:12px 0; font-weight:600; }
+.check-list li::before {
+  content:"✓";
+  color:var(--orange);
+  font-weight:bold;
+  margin-right:12px;
+}
+
+/* Products */
+.products { background:var(--light); }
+.card-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.product-card {
+  background:white;
+  border-radius:9px;
+  overflow:hidden;
+  border:1px solid #e8edf3;
+  transition:.25s;
+}
+.product-card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 12px 30px rgba(20,45,75,.10);
+}
+.product-image {
+  height:190px;
+  background-size:cover;
+  background-position:center;
+}
+.product-info { padding:23px; }
+.product-info h3 { color:var(--navy); margin-bottom:9px; font-size:19px; }
+.product-info p { color:var(--muted); font-size:14px; }
+.product-info a {
+  display:inline-block;
+  color:var(--blue);
+  font-size:13px;
+  font-weight:bold;
+  margin-top:17px;
+}
+
+/* Services */
+.services-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.service-card {
+  padding:30px 25px;
+  border:1px solid #e7edf3;
+  border-radius:8px;
+  background:white;
+}
+.service-icon {
+  width:52px;
+  height:52px;
+  border-radius:8px;
+  background:#fff0df;
+  color:var(--orange);
+  display:grid;
+  place-items:center;
+  font-size:25px;
+  margin-bottom:18px;
+}
+.service-card h3 { color:var(--navy); margin-bottom:10px; }
+.service-card p { color:var(--muted); font-size:14px; }
+
+/* Brands */
+.brands { background:var(--navy); color:white; text-align:center; }
+.brands h2 { font-size:30px; margin-bottom:12px; }
+.brands p { color:#c5d2e0; }
+.brand-list {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:45px;
+  margin-top:35px;
+  font-size:22px;
+  font-weight:bold;
+  color:white;
+}
+
+/* CTA */
+.cta {
+  background:var(--blue);
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+}
+.cta h2 { font-size:34px; margin-bottom:15px; }
+.cta p { color:#dce8f4; margin-bottom:25px; }
+
+/* Contact */
+.contact-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+.contact-info h2 { color:var(--navy); font-size:32px; margin:10px 0; }
+.contact-info p { color:var(--muted); margin:12px 0; }
+.contact-item { margin-top:25px; }
+.contact-item strong { display:block; color:var(--navy); }
+.contact-form {
+  background:var(--light);
+  padding:30px;
+  border-radius:10px;
+}
+.contact-form input,
+.contact-form textarea {
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border:1px solid #dce3eb;
+  border-radius:5px;
+  font-family:inherit;
+  font-size:14px;
+}
+.contact-form textarea { height:120px; resize:vertical; }
+.contact-form button {
+  width:100%;
+  border:0;
+  cursor:pointer;
+  font-size:15px;
+}
+
+/* Footer */
+footer {
+  background:#0b1729;
+  color:white;
+  padding:35px 0;
+  text-align:center;
+}
+footer .footer-logo img {
+  height: 42px;
+  width: auto;
+  margin: 0 auto 10px;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+footer p { color:#aebdce; font-size:13px; margin-top:10px; }
+footer a { color:var(--orange); }
+
+.whatsapp {
+  position:fixed;
+  bottom:22px;
+  right:22px;
+  background:#20b85a;
+  color:white;
+  padding:14px 20px;
+  border-radius:40px;
+  font-weight:bold;
+  box-shadow:0 4px 15px rgba(0,0,0,.2);
+  z-index:200;
+}
+
+@media(max-width:800px) {
+  .nav-links { gap:12px; font-size:12px; }
+  .nav-btn { display:none; }
+  .about-grid,.contact-grid { grid-template-columns:1fr; }
+  .card-grid,.services-grid { grid-template-columns:repeat(2,1fr); }
+  .about-image { min-height:280px; }
+}
+@media(max-width:550px) {
+  nav { flex-wrap:wrap; padding:15px 0; }
+  .nav-links { width:100%; justify-content:space-between; gap:5px; font-size:11px; }
+  .hero { padding:75px 0; }
+  section { padding:60px 0; }
+  .card-grid,.services-grid { grid-template-columns:1fr; }
+  .section-heading h2 { font-size:28px; }
+  .brand-list { gap:20px; font-size:17px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container">
+    <a href="#home" class="logo">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2AAAAEsCAYAAAD9P+vMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAEVBJREFUeNrs3UFu3bgSRtGAjWlD1uAFz3rZc8aYdRYw79w0Z3KQQQ6Q7F8hZtZzS68m3Z3FSTV25PZtLwIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+J+7vX9/fX4Tf8tVPP/37vL8/+96l//tP/7L8f34u/uTvv9fP//Xb7/P63//kH6j/X//pT5//8+9/n/6d86O//3o//7P/+/Z59/9z/18v/2f/kR/7L/n/d7t//rO39z+Odv3L/u9e/7d1r+f/799/919N//z/vv/5P///b//ff7///N//7//5vP7j1v//f/9c/v9P//+/3//vv3n71/9796///2z3t/9//fv3/4t1n/+nff9e9rvv9v//9b//wP//f7939/6vL3796X//P072u/9937///u3f93939z3/+929//29f9v3/3u//2/v/7/+v3vf/6f//vf7/v3e3f/931X///X6vP//vf/2+/v9c//v/f//v//v9c//u79//f9v/v8b1r+f//v//v3P939+n/f/7v3//239z6c/vf/9u79//+7v39v39v/v35ff/7b//9b//t7//vf36c/v/1fv7v9/X+3/979///+v//v37v//f/9e3/2f///v8v17//+v9v/1/b/b5f979v//v/9+u//v/6/ff/73vv/v///73r/+uP9f/37f//u//vv3vf/t//6/3/9u//t//v/9v/v9f//r8v//f7v3vv///b//v7/9e9v/u/e//v3/3v7//X9v//f/vff/t//6/3/7/r//v+v//v///73///v//7/r//v+v//v//r7//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v
