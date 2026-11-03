@@ -1,10 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vionic Systems | Industrial Automation & Engineering</title>
-<meta name="description" content="Vionic Systems provides industrial automation products, PLCs, VFDs, sensors, control panels, robotics and machine vision solutions in India.">
+
+<title>Vionic Systems | Industrial Automation & Engineering Solutions</title>
+
+<meta name="description" content="Vionic Systems Pune provides industrial electrical products, PLCs, VFDs, sensors, robotics, automation components, technical support and intelligent inspection solutions.">
+
+<meta name="keywords" content="Vionic Systems, Industrial Automation Pune, PLC, VFD, Sensors, Control Panels, Robotics, Machine Vision">
 
 <style>
 :root {
@@ -14,311 +19,610 @@
   --light: #f4f7fb;
   --text: #263448;
   --muted: #68778a;
+  --white: #ffffff;
 }
 
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color:var(--text);
-  line-height:1.6;
+  color: var(--text);
+  line-height: 1.7;
 }
-a { text-decoration:none; color:inherit; }
-.container { width:90%; max-width:1160px; margin:auto; }
 
-/* Navigation */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1160px;
+  margin: auto;
+}
+
+/* NAVIGATION */
+
 header {
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:100;
-  box-shadow:0 2px 15px rgba(0,0,0,.07);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 15px rgba(0,0,0,.07);
 }
+
 nav {
-  min-height:76px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
+  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
+
 .logo {
-  font-size:25px;
-  font-weight:800;
-  color:var(--navy);
-  letter-spacing:1px;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 1px;
+  line-height: 1.1;
 }
-.logo span { color:var(--orange); }
+
+.logo span { color: var(--orange); }
+
 .logo small {
-  display:block;
-  font-size:9px;
-  letter-spacing:3px;
-  color:var(--muted);
-  font-weight:600;
+  display: block;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--muted);
+  margin-top: 5px;
 }
+
 .nav-links {
-  display:flex;
-  align-items:center;
-  gap:25px;
-  font-size:14px;
-  font-weight:600;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-size: 13px;
+  font-weight: 700;
 }
-.nav-links a:hover { color:var(--orange); }
+
+.nav-links a:hover { color: var(--orange); }
+
 .nav-btn {
-  background:var(--orange);
-  color:white;
-  padding:11px 19px;
-  border-radius:5px;
+  background: var(--orange);
+  color: white;
+  padding: 11px 19px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-/* Hero */
+/* HERO */
+
 .hero {
-  background:linear-gradient(110deg,rgba(10,25,45,.97),rgba(20,58,94,.87)),
-  url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1800");
-  background-size:cover;
-  background-position:center;
-  color:white;
-  padding:115px 0 125px;
+  background:
+    linear-gradient(110deg, rgba(10,25,45,.96), rgba(20,58,94,.82)),
+    url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1800");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 125px 0;
 }
-.hero-content { max-width:720px; }
+
+.hero-content { max-width: 750px; }
+
 .eyebrow {
-  color:var(--orange);
-  font-size:13px;
-  font-weight:bold;
-  letter-spacing:3px;
-  text-transform:uppercase;
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
+
 .hero h1 {
-  font-size:clamp(38px,6vw,64px);
-  line-height:1.12;
-  margin:20px 0;
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.12;
+  margin: 22px 0;
 }
-.hero h1 span { color:var(--orange); }
+
+.hero h1 span { color: var(--orange); }
+
 .hero p {
-  color:#d5dfeb;
-  font-size:17px;
-  max-width:620px;
-  margin-bottom:32px;
+  color: #d5dfeb;
+  font-size: 17px;
+  max-width: 650px;
+  margin-bottom: 30px;
 }
+
 .btn {
-  display:inline-block;
-  padding:14px 24px;
-  border-radius:5px;
-  font-weight:bold;
-  margin:5px 8px 5px 0;
-  transition:.2s;
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px 8px 5px 0;
+  transition: .2s;
 }
-.btn-orange { background:var(--orange); color:white; }
-.btn-outline { border:1px solid white; color:white; }
-.btn:hover { transform:translateY(-3px); }
 
-/* General sections */
-section { padding:85px 0; }
-.section-heading { text-align:center; margin-bottom:45px; }
-.section-heading .eyebrow { margin-bottom:10px; }
+.btn-orange {
+  background: var(--orange);
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn:hover { transform: translateY(-3px); }
+
+/* GENERAL SECTIONS */
+
+section { padding: 85px 0; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading .eyebrow { margin-bottom: 10px; }
+
 .section-heading h2 {
-  font-size:34px;
-  color:var(--navy);
-  margin-bottom:12px;
+  font-size: 34px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.3;
 }
+
 .section-heading p {
-  max-width:650px;
-  margin:auto;
-  color:var(--muted);
+  max-width: 700px;
+  margin: auto;
+  color: var(--muted);
 }
 
-/* About */
+/* ABOUT */
+
 .about-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
 }
+
 .about-image {
-  min-height:380px;
-  border-radius:10px;
-  background:url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1000") center/cover;
+  min-height: 410px;
+  border-radius: 10px;
+  background:
+    url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1000")
+    center/cover;
 }
+
 .about-text h2 {
-  font-size:34px;
-  color:var(--navy);
-  line-height:1.2;
-  margin:15px 0;
+  font-size: 34px;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 15px 0;
 }
-.about-text p { color:var(--muted); margin:15px 0; }
-.check-list { list-style:none; margin-top:20px; }
-.check-list li { margin:12px 0; font-weight:600; }
+
+.about-text p {
+  color: var(--muted);
+  margin: 15px 0;
+}
+
+.check-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.check-list li {
+  margin: 12px 0;
+  font-weight: 600;
+}
+
 .check-list li::before {
-  content:"✓";
-  color:var(--orange);
-  font-weight:bold;
-  margin-right:12px;
+  content: "✓";
+  color: var(--orange);
+  font-weight: bold;
+  margin-right: 12px;
 }
 
-/* Products */
-.products { background:var(--light); }
-.card-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-.product-card {
-  background:white;
-  border-radius:9px;
-  overflow:hidden;
-  border:1px solid #e8edf3;
-  transition:.25s;
-}
-.product-card:hover {
-  transform:translateY(-6px);
-  box-shadow:0 12px 30px rgba(20,45,75,.10);
-}
-.product-image {
-  height:190px;
-  background-size:cover;
-  background-position:center;
-}
-.product-info { padding:23px; }
-.product-info h3 { color:var(--navy); margin-bottom:9px; font-size:19px; }
-.product-info p { color:var(--muted); font-size:14px; }
-.product-info a {
-  display:inline-block;
-  color:var(--blue);
-  font-size:13px;
-  font-weight:bold;
-  margin-top:17px;
-}
+/* BUSINESS PILLARS */
 
-/* Services */
+.pillars { background: var(--light); }
+
 .services-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
 }
-.service-card {
-  padding:30px 25px;
-  border:1px solid #e7edf3;
-  border-radius:8px;
-  background:white;
-}
-.service-icon {
-  width:52px;
-  height:52px;
-  border-radius:8px;
-  background:#fff0df;
-  color:var(--orange);
-  display:grid;
-  place-items:center;
-  font-size:25px;
-  margin-bottom:18px;
-}
-.service-card h3 { color:var(--navy); margin-bottom:10px; }
-.service-card p { color:var(--muted); font-size:14px; }
 
-/* Brands */
-.brands { background:var(--navy); color:white; text-align:center; }
-.brands h2 { font-size:30px; margin-bottom:12px; }
-.brands p { color:#c5d2e0; }
+.service-card {
+  padding: 30px 25px;
+  border: 1px solid #e7edf3;
+  border-radius: 9px;
+  background: white;
+  transition: .25s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(20,45,75,.08);
+}
+
+.service-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  background: #fff0df;
+  color: var(--orange);
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  color: var(--navy);
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* VISION */
+
+.vision {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+
+.vision h2 {
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.vision p {
+  max-width: 800px;
+  margin: auto;
+  color: #d5dfeb;
+  font-size: 16px;
+}
+
+/* FOUNDER */
+
+.founder-section { background: white; }
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.founder-photo {
+  min-height: 430px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #102640, #24527b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.founder-initials {
+  width: 145px;
+  height: 145px;
+  border: 3px solid var(--orange);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.founder-photo h3 {
+  font-size: 23px;
+}
+
+.founder-photo p {
+  color: #d5dfeb;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.founder-info h2 {
+  font-size: 34px;
+  color: var(--navy);
+  margin: 12px 0 4px;
+}
+
+.founder-info h3 {
+  color: var(--blue);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.founder-degree {
+  color: var(--orange);
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.founder-info p {
+  color: var(--muted);
+  margin: 15px 0;
+}
+
+/* PRODUCTS */
+
+.products { background: var(--light); }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid #e8edf3;
+  transition: .25s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(20,45,75,.10);
+}
+
+.product-image {
+  height: 195px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-info { padding: 23px; }
+
+.product-info h3 {
+  color: var(--navy);
+  margin-bottom: 9px;
+  font-size: 19px;
+}
+
+.product-info p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.product-info a {
+  display: inline-block;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 17px;
+}
+
+/* SERVICES */
+
+.services {
+  background: white;
+}
+
+/* BRANDS */
+
+.brands {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+
+.brands h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.brands p { color: #c5d2e0; }
+
 .brand-list {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:45px;
-  margin-top:35px;
-  font-size:22px;
-  font-weight:bold;
-  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-top: 35px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
 }
 
 /* CTA */
-.cta {
-  background:var(--blue);
-  color:white;
-  text-align:center;
-  padding:70px 20px;
-}
-.cta h2 { font-size:34px; margin-bottom:15px; }
-.cta p { color:#dce8f4; margin-bottom:25px; }
 
-/* Contact */
+.cta {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.cta h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  color: #dce8f4;
+  margin-bottom: 25px;
+}
+
+/* CONTACT */
+
 .contact-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
-.contact-info h2 { color:var(--navy); font-size:32px; margin:10px 0; }
-.contact-info p { color:var(--muted); margin:12px 0; }
-.contact-item { margin-top:25px; }
-.contact-item strong { display:block; color:var(--navy); }
+
+.contact-info h2 {
+  color: var(--navy);
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.contact-info p { color: var(--muted); }
+
+.contact-item { margin-top: 25px; }
+
+.contact-item strong {
+  display: block;
+  color: var(--navy);
+}
+
+.contact-item a {
+  color: var(--blue);
+}
+
 .contact-form {
-  background:var(--light);
-  padding:30px;
-  border-radius:10px;
+  background: var(--light);
+  padding: 30px;
+  border-radius: 10px;
 }
+
+.contact-form h3 {
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
 .contact-form input,
 .contact-form textarea {
-  width:100%;
-  padding:14px;
-  margin-bottom:15px;
-  border:1px solid #dce3eb;
-  border-radius:5px;
-  font-family:inherit;
-  font-size:14px;
-}
-.contact-form textarea { height:120px; resize:vertical; }
-.contact-form button {
-  width:100%;
-  border:0;
-  cursor:pointer;
-  font-size:15px;
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dce3eb;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
 }
 
-/* Footer */
-footer {
-  background:#0b1729;
-  color:white;
-  padding:35px 0;
-  text-align:center;
+.contact-form textarea {
+  height: 125px;
+  resize: vertical;
 }
-footer p { color:#aebdce; font-size:13px; margin-top:10px; }
-footer a { color:var(--orange); }
+
+.contact-form button {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0b1729;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #aebdce;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+footer .logo { color: white; }
+
+footer a { color: var(--orange); }
+
+/* WHATSAPP */
 
 .whatsapp {
-  position:fixed;
-  bottom:22px;
-  right:22px;
-  background:#20b85a;
-  color:white;
-  padding:14px 20px;
-  border-radius:40px;
-  font-weight:bold;
-  box-shadow:0 4px 15px rgba(0,0,0,.2);
-  z-index:200;
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #20b85a;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 40px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+  z-index: 200;
 }
 
-@media(max-width:800px) {
-  .nav-links { gap:12px; font-size:12px; }
-  .nav-btn { display:none; }
-  .about-grid,.contact-grid { grid-template-columns:1fr; }
-  .card-grid,.services-grid { grid-template-columns:repeat(2,1fr); }
-  .about-image { min-height:280px; }
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+  .nav-links { gap: 12px; font-size: 12px; }
+  .nav-btn { display: none; }
+  .about-grid,
+  .founder-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid,
+  .services-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
-@media(max-width:550px) {
-  nav { flex-wrap:wrap; padding:15px 0; }
-  .nav-links { width:100%; justify-content:space-between; gap:5px; font-size:11px; }
-  .hero { padding:75px 0; }
-  section { padding:60px 0; }
-  .card-grid,.services-grid { grid-template-columns:1fr; }
-  .section-heading h2 { font-size:28px; }
-  .brand-list { gap:20px; font-size:17px; }
+
+@media(max-width: 550px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  .hero { padding: 80px 0; }
+
+  section { padding: 60px 0; }
+
+  .card-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2,
+  .about-text h2,
+  .founder-info h2 {
+    font-size: 28px;
+  }
+
+  .brand-list {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .founder-photo { min-height: 320px; }
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <header>
   <nav class="container">
+
     <a href="#home" class="logo">
       VIONIC<span>.</span>
       <small>SYSTEMS</small>
@@ -327,116 +631,318 @@ footer a { color:var(--orange); }
     <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#founder">Founder</a>
       <a href="#products">Products</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </div>
 
     <a class="nav-btn" href="#contact">Get a Quote</a>
+
   </nav>
 </header>
 
 <main>
 
+<!-- HERO -->
+
 <section class="hero" id="home">
   <div class="container hero-content">
-    <div class="eyebrow">Industrial Automation & Engineering</div>
-    <h1>Powering Industry Through <span>Smart Automation.</span></h1>
+
+    <div class="eyebrow">
+      Industrial Automation & Engineering
+    </div>
+
+    <h1>
+      Powering Industry Through
+      <span>Smart Automation.</span>
+    </h1>
+
     <p>
-      Your sourcing and engineering partner for industrial automation,
-      electrical components, robotics and intelligent manufacturing solutions.
+      Your sourcing and engineering partner for industrial electricals,
+      automation components, robotics and intelligent manufacturing solutions.
     </p>
-    <a href="#products" class="btn btn-orange">Explore Products</a>
-    <a href="#contact" class="btn btn-outline">Discuss Your Requirement</a>
+
+    <a href="#products" class="btn btn-orange">
+      Explore Products
+    </a>
+
+    <a href="#contact" class="btn btn-outline">
+      Discuss Your Requirement
+    </a>
+
   </div>
 </section>
 
+<!-- ABOUT COMPANY -->
+
 <section id="about">
   <div class="container about-grid">
+
     <div class="about-image"></div>
+
     <div class="about-text">
+
       <div class="eyebrow">Who We Are</div>
-      <h2>Engineering Solutions. Reliable Connections.</h2>
+
+      <h2>
+        Practical Solutions. Reliable Connections.
+      </h2>
+
       <p>
-        Vionic Systems is an industrial automation and engineering
-        solutions company based in Pune, India.
+        Vionic Systems is a growing industrial solutions company
+        focused on the trading and supply of industrial electrical
+        products, robotics and automation components, sensors,
+        and industrial safety systems.
       </p>
+
       <p>
-        We help industries source automation products and access
-        practical engineering solutions for their manufacturing needs.
-        From individual components to customised automation projects,
-        we focus on quality, reliability and responsive support.
+        We help industries source quality products through reliable
+        supplier networks, practical technical support, timely
+        response, and value-driven service.
       </p>
+
+      <p>
+        Beyond component supply, we offer additional technical
+        assistance, including installation support, panel wiring,
+        sensor fitting, component replacement, troubleshooting,
+        and maintenance support.
+      </p>
+
+      <p>
+        As we expand our engineering capabilities, we are working
+        toward delivering advanced industrial automation solutions
+        across machine vision, smart warehousing, robotics,
+        and intelligent inspection.
+      </p>
+
       <ul class="check-list">
-        <li>Industrial automation product sourcing</li>
-        <li>Competitive and transparent quotations</li>
-        <li>Engineering and technical support</li>
-        <li>Customer-focused solutions</li>
+        <li>Industrial electrical and automation products</li>
+        <li>Competitive and value-driven sourcing</li>
+        <li>Practical technical assistance</li>
+        <li>Customer-focused engineering solutions</li>
       </ul>
+
     </div>
   </div>
 </section>
 
+<!-- THREE BUSINESS PILLARS -->
+
+<section class="pillars">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Our Business</div>
+      <h2>Three Pillars of Vionic Systems</h2>
+      <p>
+        From industrial component supply to intelligent
+        automation solutions.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Industrial Products & Supply</h3>
+        <p>
+          PLCs, VFDs, electrical protection devices, sensors,
+          contactors, industrial safety products and robotics components.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚙</div>
+        <h3>Engineering & Technical Services</h3>
+        <p>
+          Panel wiring, installation assistance, sensor integration,
+          component replacement, troubleshooting and technical support.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>Advanced Automation Solutions</h3>
+        <p>
+          Machine vision, AGV/AMR systems, automated counting,
+          intelligent sorting, packaging and inspection solutions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+
+<section class="vision">
+  <div class="container">
+
+    <div class="eyebrow">Our Vision</div>
+
+    <h2>Making Intelligent Automation Accessible</h2>
+
+    <p>
+      To become a trusted industrial solutions partner,
+      delivering practical, scalable and cost-effective technologies
+      — from individual components and technical support to
+      complete intelligent automation systems.
+      We aim to support the growth of India's manufacturing
+      and logistics sectors by making advanced technologies
+      accessible to businesses of all sizes.
+    </p>
+
+  </div>
+</section>
+
+<!-- FOUNDER -->
+
+<section class="founder-section" id="founder">
+  <div class="container founder-grid">
+
+    <div class="founder-photo">
+      <div class="founder-initials">HS</div>
+      <h3>Hatim Sadliwala</h3>
+      <p>FOUNDER · VIONIC SYSTEMS</p>
+    </div>
+
+    <div class="founder-info">
+
+      <div class="eyebrow">Leadership & Vision</div>
+
+      <h2>Meet the Founder</h2>
+
+      <h3>Hatim Gulzar Sadliwala</h3>
+
+      <div class="founder-degree">
+        M.Sc. Mechatronics | Germany
+      </div>
+
+      <p>
+        Hatim Gulzar Sadliwala is the Founder of Vionic Systems
+        and a Mechatronics Engineer with a Master's degree
+        in Mechatronics from Germany.
+      </p>
+
+      <p>
+        His academic and technical experience in Germany
+        developed a strong interest in industrial automation,
+        robotics, and machine vision. This expertise led to
+        the establishment of Vionic Systems, focused on
+        delivering reliable automation solutions for Indian industries.
+      </p>
+
+      <p>
+        His vision is to build Vionic Systems into a trusted
+        provider of practical and affordable automation solutions.
+        He aims to support the growth of India's manufacturing
+        and logistics sectors by making advanced technologies
+        such as machine vision, robotics, warehouse automation,
+        and intelligent material handling more accessible
+        to businesses of all sizes.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+
 <section class="products" id="products">
   <div class="container">
+
     <div class="section-heading">
       <div class="eyebrow">Our Product Range</div>
       <h2>Industrial Automation Products</h2>
-      <p>Reliable components for control, protection, monitoring and automation applications.</p>
+      <p>
+        Quality components for control, protection,
+        monitoring and automation applications.
+      </p>
     </div>
 
     <div class="card-grid">
 
       <div class="product-card">
-        <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800')"></div>
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800')">
+        </div>
         <div class="product-info">
           <h3>PLC & Controllers</h3>
-          <p>Programmable logic controllers, industrial controllers, I/O modules and automation accessories.</p>
+          <p>
+            Programmable logic controllers, industrial controllers,
+            I/O modules and automation accessories.
+          </p>
           <a href="#contact">ENQUIRE NOW →</a>
         </div>
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1581092335397-9fa3411d9e2c?w=800')"></div>
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092335397-9fa3411d9e2c?w=800')">
+        </div>
         <div class="product-info">
           <h3>VFD & Motor Drives</h3>
-          <p>Variable frequency drives, motor control solutions and drive accessories.</p>
+          <p>
+            Variable frequency drives, motor control solutions
+            and drive accessories.
+          </p>
           <a href="#contact">ENQUIRE NOW →</a>
         </div>
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=800')"></div>
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=800')">
+        </div>
         <div class="product-info">
           <h3>Industrial Sensors</h3>
-          <p>Proximity, photoelectric, inductive, capacitive and measurement sensors.</p>
+          <p>
+            Proximity, photoelectric, inductive, capacitive
+            and measurement sensors.
+          </p>
           <a href="#contact">ENQUIRE NOW →</a>
         </div>
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800')"></div>
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800')">
+        </div>
         <div class="product-info">
           <h3>Electrical Protection</h3>
-          <p>MCBs, MCCBs, MPCBs, circuit protection and electrical distribution products.</p>
+          <p>
+            MCBs, MCCBs, MPCBs, circuit protection
+            and electrical distribution products.
+          </p>
           <a href="#contact">ENQUIRE NOW →</a>
         </div>
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800')"></div>
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800')">
+        </div>
         <div class="product-info">
           <h3>Contactors & Relays</h3>
-          <p>Industrial contactors, auxiliary relays, overload relays and control accessories.</p>
+          <p>
+            Industrial contactors, auxiliary relays,
+            overload relays and control accessories.
+          </p>
           <a href="#contact">ENQUIRE NOW →</a>
         </div>
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background-image:url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800')"></div>
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800')">
+        </div>
         <div class="product-info">
-          <h3>Machine Vision</h3>
-          <p>Industrial cameras, vision sensors, lighting and inspection components.</p>
+          <h3>Machine Vision Components</h3>
+          <p>
+            Industrial cameras, vision sensors,
+            lighting and inspection components.
+          </p>
           <a href="#contact">ENQUIRE NOW →</a>
         </div>
       </div>
@@ -445,60 +951,92 @@ footer a { color:var(--orange); }
   </div>
 </section>
 
-<section id="services">
+<!-- ENGINEERING SERVICES -->
+
+<section class="services" id="services">
   <div class="container">
+
     <div class="section-heading">
       <div class="eyebrow">What We Do</div>
-      <h2>Our Engineering Services</h2>
-      <p>Supporting industries with practical automation and engineering capabilities.</p>
+      <h2>Engineering & Automation Services</h2>
+      <p>
+        Supporting industries with practical engineering
+        assistance and developing automation capabilities.
+      </p>
     </div>
 
     <div class="services-grid">
 
       <div class="service-card">
         <div class="service-icon">⚙</div>
-        <h3>Control Panel Manufacturing</h3>
-        <p>Industrial control panels, electrical wiring, component integration and panel assembly.</p>
+        <h3>Control Panel Wiring</h3>
+        <p>
+          Electrical panel wiring, component integration,
+          assembly and installation assistance.
+        </p>
       </div>
 
       <div class="service-card">
         <div class="service-icon">🤖</div>
         <h3>Robotics & Automation</h3>
-        <p>Industrial automation, robotics integration and customised manufacturing solutions.</p>
+        <p>
+          Robotics integration, industrial automation
+          and customised manufacturing solutions.
+        </p>
       </div>
 
       <div class="service-card">
         <div class="service-icon">◉</div>
         <h3>Machine Vision & Inspection</h3>
-        <p>Vision-based inspection, object detection, counting and quality control systems.</p>
+        <p>
+          Vision-based inspection, object detection,
+          counting, defect detection and quality control.
+        </p>
       </div>
 
       <div class="service-card">
         <div class="service-icon">⌁</div>
         <h3>Electrical Installation</h3>
-        <p>Electrical fitting, panel wiring, installation and commissioning support.</p>
+        <p>
+          Electrical fitting, sensor installation,
+          panel wiring and commissioning assistance.
+        </p>
       </div>
 
       <div class="service-card">
         <div class="service-icon">⚡</div>
-        <h3>Industrial Troubleshooting</h3>
-        <p>Technical assistance, maintenance and troubleshooting of automation systems.</p>
+        <h3>Technical Support</h3>
+        <p>
+          Component replacement, troubleshooting,
+          maintenance assistance and technical guidance.
+        </p>
       </div>
 
       <div class="service-card">
         <div class="service-icon">▦</div>
-        <h3>Custom Automation Solutions</h3>
-        <p>Automation concepts and customised solutions for industrial applications.</p>
+        <h3>Smart Automation Development</h3>
+        <p>
+          AGV/AMR, barcode scanning, intelligent material handling,
+          automated counting, sorting and packaging concepts.
+        </p>
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- BRANDS -->
+
 <section class="brands">
   <div class="container">
+
     <h2>Supporting Leading Industrial Technologies</h2>
-    <p>We source products from established industrial automation brands, subject to availability.</p>
+
+    <p>
+      We source products from established industrial
+      automation brands, subject to availability.
+    </p>
+
     <div class="brand-list">
       <span>SIEMENS</span>
       <span>ABB</span>
@@ -506,91 +1044,184 @@ footer a { color:var(--orange); }
       <span>SICK</span>
       <span>Mitsubishi</span>
     </div>
+
   </div>
 </section>
+
+<!-- CALL TO ACTION -->
 
 <section class="cta">
   <div class="container">
+
     <h2>Looking for an Automation Solution?</h2>
-    <p>Share your product or engineering requirement with our team.</p>
-    <a href="#contact" class="btn btn-orange">Send Your Enquiry</a>
+
+    <p>
+      Share your product requirement or engineering
+      challenge with Vionic Systems.
+    </p>
+
+    <a href="#contact" class="btn btn-orange">
+      Send Your Enquiry
+    </a>
+
   </div>
 </section>
 
+<!-- CONTACT -->
+
 <section id="contact">
   <div class="container contact-grid">
+
     <div class="contact-info">
+
       <div class="eyebrow">Get In Touch</div>
+
       <h2>Let's Discuss Your Requirement.</h2>
+
       <p>
-        Looking for a specific automation product, electrical
-        component or engineering solution? Contact Vionic Systems.
+        Looking for a specific automation product,
+        electrical component or engineering solution?
+        Contact Vionic Systems.
       </p>
 
       <div class="contact-item">
         <strong>Company</strong>
         Vionic Systems
       </div>
+
       <div class="contact-item">
-        <strong>Location</strong>
-        Shop No. 8, Sagar Plaza, Mumbai–Pune Road, Near Nashik Phata, Kasarwadi, Pune, Maharashtra – 411034
+        <strong>Address</strong>
+        Shop No. 8, Sagar Plaza, Mumbai–Pune Road,
+        Near Nashik Phata, Kasarwadi,
+        Pune, Maharashtra – 411034
       </div>
+
       <div class="contact-item">
         <strong>Email</strong>
-        vionicsystems@gmail.com
+        <a href="mailto:vionicsystems@gmail.com">
+          vionicsystems@gmail.com
+        </a>
       </div>
+
       <div class="contact-item">
-        <strong>Phone / WhatsApp</strong>
-        +91 7385398355 (Office)
-        +91 9766810125 (Hatim Sadliwala)
+        <strong>Office</strong>
+        <a href="tel:+917385398355">
+          +91 7385398355
+        </a>
       </div>
+
+      <div class="contact-item">
+        <strong>Founder – Hatim Sadliwala</strong>
+        <a href="tel:+919766810125">
+          +91 9766810125
+        </a>
+      </div>
+
     </div>
 
     <form class="contact-form" onsubmit="sendEnquiry(event)">
-      <h3 style="color:#101f35;margin-bottom:20px;">Send an Enquiry</h3>
-      <input id="name" type="text" placeholder="Your Name" required>
-      <input id="email" type="email" placeholder="Email Address" required>
-      <input id="phone" type="tel" placeholder="Phone Number">
-      <textarea id="message" placeholder="Tell us about your requirement..." required></textarea>
-      <button type="submit" class="btn btn-orange">Send Enquiry via WhatsApp</button>
+
+      <h3>Send an Enquiry</h3>
+
+      <input
+        id="name"
+        type="text"
+        placeholder="Your Name"
+        required
+      >
+
+      <input
+        id="email"
+        type="email"
+        placeholder="Email Address"
+        required
+      >
+
+      <input
+        id="phone"
+        type="tel"
+        placeholder="Phone Number"
+      >
+
+      <textarea
+        id="message"
+        placeholder="Tell us about your requirement..."
+        required
+      ></textarea>
+
+      <button type="submit" class="btn btn-orange">
+        Send Enquiry via WhatsApp
+      </button>
+
     </form>
+
   </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
+
 <footer>
   <div class="container">
-    <div class="logo" style="color:white;">VIONIC<span>.</span> SYSTEMS</div>
-    <p>Industrial Automation | Electrical Products | Engineering Solutions</p>
-    <p>© <span id="year"></span> Vionic Systems. All Rights Reserved.</p>
+
+    <div class="logo">
+      VIONIC<span>.</span>
+      <small>SYSTEMS</small>
+    </div>
+
+    <p>
+      Industrial Products | Automation | Robotics | Engineering Solutions
+    </p>
+
+    <p>
+      © <span id="year"></span> Vionic Systems.
+      All Rights Reserved.
+    </p>
+
+    <p>
+      Pune, Maharashtra, India
+    </p>
+
   </div>
 </footer>
 
-<a class="whatsapp" id="whatsappLink" href="#" target="_blank">WhatsApp Us</a>
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a
+  class="whatsapp"
+  id="whatsappLink"
+  href="https://wa.me/917385398355"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  WhatsApp Us
+</a>
+
+<!-- JAVASCRIPT -->
 
 <script>
-// REPLACE THIS WITH YOUR WHATSAPP NUMBER.
-// Include country code, without + or spaces. Example: 919876543210
+
 const WHATSAPP_NUMBER = "917385398355";
 
-document.getElementById("year").textContent = new Date().getFullYear();
-
-document.getElementById("whatsappLink").href =
-  "https://wa.me/" + WHATSAPP_NUMBER;
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
 function sendEnquiry(event) {
+
   event.preventDefault();
 
-  if (WHATSAPP_NUMBER.includes("X")) {
-    alert("Please add your WhatsApp number in the website code first.");
-    return;
-  }
+  const name =
+    document.getElementById("name").value.trim();
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const message = document.getElementById("message").value;
+  const email =
+    document.getElementById("email").value.trim();
+
+  const phone =
+    document.getElementById("phone").value.trim();
+
+  const message =
+    document.getElementById("message").value.trim();
 
   const text =
     "Hello Vionic Systems,\n\n" +
@@ -599,344 +1230,17 @@ function sendEnquiry(event) {
     "Phone: " + phone + "\n" +
     "Requirement: " + message;
 
-  window.open(
-    "https://wa.me/" + WHATSAPP_NUMBER + "?text=" +
-    encodeURIComponent(text),
-    "_blank"
-  );
+  const whatsappURL =
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent(text);
+
+  window.open(whatsappURL, "_blank", "noopener,noreferrer");
+
 }
+
 </script>
 
 </body>
 </html>
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vionic Systems | Industrial Automation & Engineering</title>
-<meta name="description" content="Vionic Systems provides industrial automation products, PLCs, VFDs, sensors, control panels, robotics and machine vision solutions in India.">
-
-<style>
-:root {
-  --navy: #101f35;
-  --blue: #174b80;
-  --orange: #f28b30;
-  --light: #f4f7fb;
-  --text: #263448;
-  --muted: #68778a;
-}
-
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color:var(--text);
-  line-height:1.6;
-}
-a { text-decoration:none; color:inherit; }
-.container { width:90%; max-width:1160px; margin:auto; }
-
-/* Navigation */
-header {
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:100;
-  box-shadow:0 2px 15px rgba(0,0,0,.07);
-}
-nav {
-  min-height:76px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-}
-.logo img {
-  height: 48px;
-  width: auto;
-  display: block;
-}
-.nav-links {
-  display:flex;
-  align-items:center;
-  gap:25px;
-  font-size:14px;
-  font-weight:600;
-}
-.nav-links a:hover { color:var(--orange); }
-.nav-btn {
-  background:var(--orange);
-  color:white;
-  padding:11px 19px;
-  border-radius:5px;
-}
-
-/* Hero */
-.hero {
-  background:linear-gradient(110deg,rgba(10,25,45,.97),rgba(20,58,94,.87)),
-  url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1800");
-  background-size:cover;
-  background-position:center;
-  color:white;
-  padding:115px 0 125px;
-}
-.hero-content { max-width:720px; }
-.eyebrow {
-  color:var(--orange);
-  font-size:13px;
-  font-weight:bold;
-  letter-spacing:3px;
-  text-transform:uppercase;
-}
-.hero h1 {
-  font-size:clamp(38px,6vw,64px);
-  line-height:1.12;
-  margin:20px 0;
-}
-.hero h1 span { color:var(--orange); }
-.hero p {
-  color:#d5dfeb;
-  font-size:17px;
-  max-width:620px;
-  margin-bottom:32px;
-}
-.btn {
-  display:inline-block;
-  padding:14px 24px;
-  border-radius:5px;
-  font-weight:bold;
-  margin:5px 8px 5px 0;
-  transition:.2s;
-}
-.btn-orange { background:var(--orange); color:white; }
-.btn-outline { border:1px solid white; color:white; }
-.btn:hover { transform:translateY(-3px); }
-
-/* General sections */
-section { padding:85px 0; }
-.section-heading { text-align:center; margin-bottom:45px; }
-.section-heading .eyebrow { margin-bottom:10px; }
-.section-heading h2 {
-  font-size:34px;
-  color:var(--navy);
-  margin-bottom:12px;
-}
-.section-heading p {
-  max-width:650px;
-  margin:auto;
-  color:var(--muted);
-}
-
-/* About */
-.about-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:55px;
-  align-items:center;
-}
-.about-image {
-  min-height:380px;
-  border-radius:10px;
-  background:url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1000") center/cover;
-}
-.about-text h2 {
-  font-size:34px;
-  color:var(--navy);
-  line-height:1.2;
-  margin:15px 0;
-}
-.about-text p { color:var(--muted); margin:15px 0; }
-.director-tag {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--blue);
-  background: #e8edf3;
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-}
-.check-list { list-style:none; margin-top:20px; }
-.check-list li { margin:12px 0; font-weight:600; }
-.check-list li::before {
-  content:"✓";
-  color:var(--orange);
-  font-weight:bold;
-  margin-right:12px;
-}
-
-/* Products */
-.products { background:var(--light); }
-.card-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-.product-card {
-  background:white;
-  border-radius:9px;
-  overflow:hidden;
-  border:1px solid #e8edf3;
-  transition:.25s;
-}
-.product-card:hover {
-  transform:translateY(-6px);
-  box-shadow:0 12px 30px rgba(20,45,75,.10);
-}
-.product-image {
-  height:190px;
-  background-size:cover;
-  background-position:center;
-}
-.product-info { padding:23px; }
-.product-info h3 { color:var(--navy); margin-bottom:9px; font-size:19px; }
-.product-info p { color:var(--muted); font-size:14px; }
-.product-info a {
-  display:inline-block;
-  color:var(--blue);
-  font-size:13px;
-  font-weight:bold;
-  margin-top:17px;
-}
-
-/* Services */
-.services-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.service-card {
-  padding:30px 25px;
-  border:1px solid #e7edf3;
-  border-radius:8px;
-  background:white;
-}
-.service-icon {
-  width:52px;
-  height:52px;
-  border-radius:8px;
-  background:#fff0df;
-  color:var(--orange);
-  display:grid;
-  place-items:center;
-  font-size:25px;
-  margin-bottom:18px;
-}
-.service-card h3 { color:var(--navy); margin-bottom:10px; }
-.service-card p { color:var(--muted); font-size:14px; }
-
-/* Brands */
-.brands { background:var(--navy); color:white; text-align:center; }
-.brands h2 { font-size:30px; margin-bottom:12px; }
-.brands p { color:#c5d2e0; }
-.brand-list {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:45px;
-  margin-top:35px;
-  font-size:22px;
-  font-weight:bold;
-  color:white;
-}
-
-/* CTA */
-.cta {
-  background:var(--blue);
-  color:white;
-  text-align:center;
-  padding:70px 20px;
-}
-.cta h2 { font-size:34px; margin-bottom:15px; }
-.cta p { color:#dce8f4; margin-bottom:25px; }
-
-/* Contact */
-.contact-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-}
-.contact-info h2 { color:var(--navy); font-size:32px; margin:10px 0; }
-.contact-info p { color:var(--muted); margin:12px 0; }
-.contact-item { margin-top:25px; }
-.contact-item strong { display:block; color:var(--navy); }
-.contact-form {
-  background:var(--light);
-  padding:30px;
-  border-radius:10px;
-}
-.contact-form input,
-.contact-form textarea {
-  width:100%;
-  padding:14px;
-  margin-bottom:15px;
-  border:1px solid #dce3eb;
-  border-radius:5px;
-  font-family:inherit;
-  font-size:14px;
-}
-.contact-form textarea { height:120px; resize:vertical; }
-.contact-form button {
-  width:100%;
-  border:0;
-  cursor:pointer;
-  font-size:15px;
-}
-
-/* Footer */
-footer {
-  background:#0b1729;
-  color:white;
-  padding:35px 0;
-  text-align:center;
-}
-footer .footer-logo img {
-  height: 42px;
-  width: auto;
-  margin: 0 auto 10px;
-  display: block;
-  filter: brightness(0) invert(1);
-}
-footer p { color:#aebdce; font-size:13px; margin-top:10px; }
-footer a { color:var(--orange); }
-
-.whatsapp {
-  position:fixed;
-  bottom:22px;
-  right:22px;
-  background:#20b85a;
-  color:white;
-  padding:14px 20px;
-  border-radius:40px;
-  font-weight:bold;
-  box-shadow:0 4px 15px rgba(0,0,0,.2);
-  z-index:200;
-}
-
-@media(max-width:800px) {
-  .nav-links { gap:12px; font-size:12px; }
-  .nav-btn { display:none; }
-  .about-grid,.contact-grid { grid-template-columns:1fr; }
-  .card-grid,.services-grid { grid-template-columns:repeat(2,1fr); }
-  .about-image { min-height:280px; }
-}
-@media(max-width:550px) {
-  nav { flex-wrap:wrap; padding:15px 0; }
-  .nav-links { width:100%; justify-content:space-between; gap:5px; font-size:11px; }
-  .hero { padding:75px 0; }
-  section { padding:60px 0; }
-  .card-grid,.services-grid { grid-template-columns:1fr; }
-  .section-heading h2 { font-size:28px; }
-  .brand-list { gap:20px; font-size:17px; }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <nav class="container">
-    <a href="#home" class="logo">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2AAAAEsCAYAAAD9P+vMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAEVBJREFUeNrs3UFu3bgSRtGAjWlD1uAFz3rZc8aYdRYw79w0Z3KQQQ6Q7F8hZtZzS68m3Z3FSTV25PZtLwIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+J+7vX9/fX4Tf8tVPP/37vL8/+96l//tP/7L8f34u/uTvv9fP//Xb7/P63//kH6j/X//pT5//8+9/n/6d86O//3o//7P/+/Z59/9z/18v/2f/kR/7L/n/d7t//rO39z+Odv3L/u9e/7d1r+f/799/919N//z/vv/5P///b//ff7///N//7//5vP7j1v//f/9c/v9P//+/3//vv3n71/9796///2z3t/9//fv3/4t1n/+nff9e9rvv9v//9b//wP//f7939/6vL3796X//P072u/9937///u3f93939z3/+929//29f9v3/3u//2/v/7/+v3vf/6f//vf7/v3e3f/931X///X6vP//vf/2+/v9c//v/f//v//v9c//u79//f9v/v8b1r+f//v//v3P939+n/f/7v3//239z6c/vf/9u79//+7v39v39v/v35ff/7b//9b//t7//vf36c/v/1fv7v9/X+3/979///+v//v37v//f/9e3/2f///v8v17//+v9v/1/b/b5f979v//v/9+u//v/6/ff/73vv/v///73r/+uP9f/37f//u//vv3vf/t//6/3/9u//t//v/9v/v9f//r8v//f7v3vv///b//v7/9e9v/u/e//v3/3v7//X9v//f/vff/t//6/3/7/r//v+v//v///73///v//7/r//v+v//v//r7//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v+v//v9v/v9v3/7v3//v3v//v37v//P7//v
