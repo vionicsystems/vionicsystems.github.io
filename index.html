@@ -66,21 +66,17 @@ nav {
 }
 
 .logo {
-  font-size: 26px;
-  font-weight: 800;
-  color: var(--navy);
-  letter-spacing: 1px;
-  line-height: 1.1;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-.logo span { color: var(--orange); }
-
-.logo small {
+.logo img {
+  height: 60px;
+  width: auto;
+  max-width: 230px;
+  object-fit: contain;
   display: block;
-  font-size: 10px;
-  letter-spacing: 4px;
-  color: var(--muted);
-  margin-top: 5px;
 }
 
 .nav-links {
@@ -542,9 +538,17 @@ footer p {
   margin-top: 10px;
 }
 
-footer .logo { color: white; }
+footer .logo {
+  justify-content: center;
+  margin: 0 auto;
+}
 
-footer a { color: var(--orange); }
+footer .logo img {
+  height: 60px;
+  width: auto;
+  max-width: 230px;
+  object-fit: contain;
+}
 
 /* WHATSAPP */
 
@@ -566,6 +570,7 @@ footer a { color: var(--orange); }
 @media(max-width: 900px) {
   .nav-links { gap: 12px; font-size: 12px; }
   .nav-btn { display: none; }
+
   .about-grid,
   .founder-grid,
   .contact-grid {
@@ -581,7 +586,12 @@ footer a { color: var(--orange); }
 @media(max-width: 550px) {
   nav {
     flex-wrap: wrap;
-    padding: 15px 0;
+    padding: 12px 0;
+  }
+
+  .logo img {
+    height: 48px;
+    max-width: 190px;
   }
 
   .nav-links {
@@ -612,6 +622,13 @@ footer a { color: var(--orange); }
   }
 
   .founder-photo { min-height: 320px; }
+
+  .whatsapp {
+    bottom: 15px;
+    right: 15px;
+    padding: 11px 16px;
+    font-size: 13px;
+  }
 }
 </style>
 </head>
@@ -624,8 +641,7 @@ footer a { color: var(--orange); }
   <nav class="container">
 
     <a href="#home" class="logo">
-      VIONIC<span>.</span>
-      <small>SYSTEMS</small>
+      <img src="images/1.png" alt="Vionic Systems Logo">
     </a>
 
     <div class="nav-links">
@@ -1166,8 +1182,7 @@ footer a { color: var(--orange); }
   <div class="container">
 
     <div class="logo">
-      VIONIC<span>.</span>
-      <small>SYSTEMS</small>
+      <img src="images/1.png" alt="Vionic Systems Logo">
     </div>
 
     <p>
