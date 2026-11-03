@@ -5,1627 +5,1399 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vionic Systems | Industrial Sourcing & Engineering Partner</title>
+<title>Vionic Systems | Industrial Automation & Engineering Solutions</title>
 
-<meta name="description" content="Vionic Systems, Pune — industrial electrical and automation component sourcing, PLCs, VFDs, sensors, control panel wiring, installation and engineering support.">
-<meta name="keywords" content="Industrial Automation Pune, PLC, VFD, Sensors, Industrial Electricals, Control Panel Wiring, Automation Components, Vionic Systems">
-<meta name="theme-color" content="#142b45">
+<meta name="description" content="Vionic Systems Pune provides industrial electrical products, PLCs, VFDs, sensors, robotics, automation components, technical support and intelligent inspection solutions.">
+
+<meta name="keywords" content="Vionic Systems, Industrial Automation Pune, PLC, VFD, Sensors, Control Panels, Robotics, Machine Vision">
 
 <style>
 :root {
-    --navy: #142b45;
-    --blue: #1f5278;
-    --orange: #e98232;
-    --ink: #1d2935;
-    --muted: #647384;
-    --light: #f4f7fa;
-    --line: #e2e8ee;
-    --white: #ffffff;
+  --navy: #101f35;
+  --blue: #174b80;
+  --orange: #f28b30;
+  --light: #f4f7fb;
+  --text: #263448;
+  --muted: #68778a;
+  --white: #ffffff;
 }
 
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 85px;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--ink);
-    line-height: 1.6;
-    background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
-    width: min(1120px, 92%);
-    margin: auto;
+  width: 90%;
+  max-width: 1160px;
+  margin: auto;
 }
 
-/* HEADER */
+/* NAVIGATION */
 
 header {
-    background: #fff;
-    border-bottom: 1px solid var(--line);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.nav {
-    min-height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    font-weight: 800;
-    letter-spacing: .7px;
-    color: var(--navy);
-    font-size: 20px;
-    flex-shrink: 0;
-}
-
-.logo {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-}
-
-.brand small {
-    display: block;
-    font-size: 9px;
-    letter-spacing: 2px;
-    color: var(--muted);
-    font-weight: 700;
-    margin-top: -4px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 15px rgba(0,0,0,.07);
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    font-size: 13px;
-    font-weight: 700;
-    color: #425466;
+  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-nav a:hover {
-    color: var(--orange);
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-.nav-cta,
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--orange);
-    color: #fff;
-    padding: 12px 19px;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 13px;
-    border: 0;
-    cursor: pointer;
-    transition: .2s;
+.logo img {
+  height: 60px;
+  width: auto;
+  max-width: 230px;
+  object-fit: contain;
+  display: block;
 }
 
-.nav-cta:hover,
-.btn:hover {
-    background: #d66d20;
-    transform: translateY(-1px);
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: var(--orange);
+}
+
+.nav-btn {
+  background: var(--orange);
+  color: white;
+  padding: 11px 19px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 /* HERO */
 
 .hero {
-    background: linear-gradient(115deg, #10263e 0%, #1c4567 68%, #245779 100%);
-    color: #fff;
-    padding: 86px 0 78px;
-    overflow: hidden;
+  background:
+    linear-gradient(110deg, rgba(10,25,45,.96), rgba(20,58,94,.82)),
+    url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1800");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 125px 0;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.12fr .88fr;
-    gap: 48px;
-    align-items: center;
+.hero-content {
+  max-width: 750px;
 }
 
 .eyebrow {
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #f3a25e;
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-h1 {
-    font-size: clamp(37px, 5vw, 59px);
-    line-height: 1.08;
-    letter-spacing: -1.5px;
-    margin: 16px 0 20px;
+.hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.12;
+  margin: 22px 0;
 }
 
-.hero-tagline {
-    font-size: 17px;
-    font-weight: 800;
-    color: #f3a25e;
-    margin: 0 0 15px;
-    letter-spacing: .2px;
+.hero h1 span {
+  color: var(--orange);
 }
 
 .hero p {
-    font-size: 16px;
-    color: #d9e4ed;
-    max-width: 590px;
-    margin: 0 0 27px;
+  color: #d5dfeb;
+  font-size: 17px;
+  max-width: 650px;
+  margin-bottom: 30px;
 }
 
-.hero-actions {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px 8px 5px 0;
+  transition: .2s;
+}
+
+.btn-orange {
+  background: var(--orange);
+  color: white;
 }
 
 .btn-outline {
-    border: 1px solid #a9bdce;
-    color: #fff;
-    padding: 11px 18px;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: 700;
-    transition: .2s;
+  border: 1px solid white;
+  color: white;
 }
 
-.btn-outline:hover {
-    background: #ffffff18;
-}
-
-.hero-note {
-    font-size: 11px;
-    color: #c1d0dc;
-    margin-top: 22px;
-}
-
-/* HERO VISUAL */
-
-.hero-visual {
-    min-height: 310px;
-    border: 1px solid #54718a;
-    border-radius: 12px;
-    background: linear-gradient(145deg, #294f6d, #10273f);
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.panel {
-    width: 78%;
-    max-width: 310px;
-    background: #dce4e9;
-    border: 8px solid #9aa9b4;
-    border-radius: 7px;
-    padding: 18px;
-    box-shadow: 0 20px 45px #08182780;
-}
-
-.panel-top {
-    height: 13px;
-    background: #9eabb4;
-    border-radius: 2px;
-    margin-bottom: 15px;
-}
-
-.panel-row {
-    display: flex;
-    gap: 9px;
-    margin: 10px 0;
-}
-
-.device {
-    height: 70px;
-    flex: 1;
-    background: #233c51;
-    border-radius: 4px;
-    border: 3px solid #6c7d89;
-    position: relative;
-}
-
-.device:before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #e98232;
-    top: 10px;
-    left: calc(50% - 5px);
-}
-
-.device:after {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 18px;
-    border: 2px solid #9eabb4;
-    bottom: 9px;
-    left: calc(50% - 13px);
-}
-
-.panel-label {
-    font-size: 9px;
-    letter-spacing: 1px;
-    color: #52616c;
-    text-align: center;
-    font-weight: 800;
-}
-
-.float-tag {
-    position: absolute;
-    right: 5%;
-    bottom: 14%;
-    background: #fff;
-    color: var(--navy);
-    padding: 11px 15px;
-    border-radius: 6px;
-    font-size: 11px;
-    font-weight: 800;
-    box-shadow: 0 8px 22px #07172755;
-}
-
-/* TRUSTED BRANDS */
-
-.trust {
-    padding: 23px 0;
-    border-bottom: 1px solid var(--line);
-    background: #fff;
-}
-
-.trust-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 18px;
-    flex-wrap: wrap;
-}
-
-.trust-label {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    color: var(--muted);
-    font-weight: 800;
-}
-
-.brand-list {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    color: #5b6874;
-    font-weight: 800;
-    font-size: 15px;
+.btn:hover {
+  transform: translateY(-3px);
 }
 
 /* GENERAL SECTIONS */
 
 section {
-    padding: 72px 0;
+  padding: 85px 0;
 }
 
-.section-head {
-    max-width: 680px;
-    margin-bottom: 32px;
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
 }
 
-.kicker {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
-    color: var(--orange);
-    font-weight: 800;
+.section-heading .eyebrow {
+  margin-bottom: 10px;
 }
 
-h2 {
-    font-size: clamp(27px, 3vw, 38px);
-    line-height: 1.2;
-    color: var(--navy);
-    margin: 9px 0 12px;
-    letter-spacing: -.5px;
+.section-heading h2 {
+  font-size: 34px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.3;
 }
 
-.section-head p,
-.intro {
-    color: var(--muted);
-    margin: 0;
-}
-
-.soft {
-    background: var(--light);
+.section-heading p {
+  max-width: 700px;
+  margin: auto;
+  color: var(--muted);
 }
 
 /* ABOUT */
 
-.split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    align-items: center;
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
 }
 
-.checks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 25px;
+.about-image {
+  min-height: 410px;
+  border-radius: 10px;
+  background:
+    url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1000")
+    center/cover;
 }
 
-.check {
-    font-size: 13px;
-    color: #405163;
-    display: flex;
-    gap: 9px;
-    align-items: flex-start;
+.about-text h2 {
+  font-size: 34px;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 15px 0;
 }
 
-.tick {
-    color: var(--orange);
-    font-weight: 900;
+.about-text p {
+  color: var(--muted);
+  margin: 15px 0;
 }
 
-.highlight {
-    background: var(--navy);
-    color: #fff;
-    padding: 30px;
-    border-radius: 9px;
+.check-list {
+  list-style: none;
+  margin-top: 20px;
 }
 
-.highlight h3 {
-    font-size: 22px;
-    margin: 0 0 12px;
+.check-list li {
+  margin: 12px 0;
+  font-weight: 600;
 }
 
-.highlight p {
-    color: #d1dce5;
-    font-size: 14px;
+.check-list li::before {
+  content: "✓";
+  color: var(--orange);
+  font-weight: bold;
+  margin-right: 12px;
 }
 
-.highlight .mini {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-top: 25px;
+/* BUSINESS PILLARS */
+
+.pillars {
+  background: var(--light);
 }
 
-.mini div {
-    border-top: 1px solid #496178;
-    padding-top: 12px;
-    font-size: 12px;
-    color: #d5e0e8;
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
 }
 
-.mini strong {
-    display: block;
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 3px;
+.service-card {
+  padding: 30px 25px;
+  border: 1px solid #e7edf3;
+  border-radius: 9px;
+  background: white;
+  transition: .25s;
 }
 
-/* CARDS */
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(20,45,75,.08);
 }
 
-.card {
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 24px;
-    background: #fff;
-    transition: .2s;
+.service-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  background: #fff0df;
+  color: var(--orange);
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  margin-bottom: 18px;
 }
 
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 28px #142b4510;
-    border-color: #c7d3dd;
+.service-card h3 {
+  color: var(--navy);
+  margin-bottom: 10px;
+  font-size: 19px;
 }
 
-.card-icon {
-    height: 43px;
-    width: 43px;
-    background: #edf3f7;
-    color: var(--blue);
-    border-radius: 8px;
-    display: grid;
-    place-items: center;
-    font-size: 20px;
-    margin-bottom: 16px;
+.service-card p {
+  color: var(--muted);
+  font-size: 14px;
 }
 
-.card h3 {
-    font-size: 17px;
-    color: var(--navy);
-    margin: 0 0 8px;
+/* VISION */
+
+.vision {
+  background: var(--navy);
+  color: white;
+  text-align: center;
 }
 
-.card p {
-    font-size: 13px;
-    color: var(--muted);
-    margin: 0;
+.vision h2 {
+  font-size: 35px;
+  margin: 15px 0;
 }
 
-/* HOW WE WORK */
-
-.steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.step {
-    padding: 22px;
-    border-top: 3px solid var(--orange);
-    background: #fff;
-    border-radius: 0 0 7px 7px;
-}
-
-.step b {
-    font-size: 12px;
-    color: var(--orange);
-    letter-spacing: 1px;
-}
-
-.step h3 {
-    font-size: 17px;
-    color: var(--navy);
-    margin: 8px 0;
-}
-
-.step p {
-    font-size: 13px;
-    color: var(--muted);
-    margin: 0;
-}
-
-/* FUTURE CAPABILITIES */
-
-.future-label {
-    display: inline-block;
-    background: #fff3e8;
-    color: #b75d1c;
-    padding: 6px 10px;
-    border-radius: 4px;
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
-}
-
-.future-note {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 22px;
+.vision p {
+  max-width: 800px;
+  margin: auto;
+  color: #d5dfeb;
+  font-size: 16px;
 }
 
 /* FOUNDER */
 
+.founder-section {
+  background: white;
+}
+
 .founder-grid {
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    gap: 45px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 55px;
+  align-items: center;
 }
 
 .founder-photo {
-    min-height: 350px;
-    background: #eaf0f4;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 430px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #102640, #24527b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  overflow: hidden;
 }
 
-.founder-image {
-    display: block;
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    object-position: center;
+.founder-photo img {
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.founder-role {
-    color: var(--orange);
-    font-size: 13px;
-    font-weight: 800;
-    margin: 0 0 16px;
+.founder-photo h3 {
+  font-size: 23px;
+}
+
+.founder-photo p {
+  color: #d5dfeb;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.founder-info h2 {
+  font-size: 34px;
+  color: var(--navy);
+  margin: 12px 0 4px;
+}
+
+.founder-info h3 {
+  color: var(--blue);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.founder-degree {
+  color: var(--orange);
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.founder-info p {
+  color: var(--muted);
+  margin: 15px 0;
+}
+
+/* PRODUCTS */
+
+.products {
+  background: var(--light);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid #e8edf3;
+  transition: .25s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(20,45,75,.10);
+}
+
+.product-image {
+  height: 195px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-info {
+  padding: 23px;
+}
+
+.product-info h3 {
+  color: var(--navy);
+  margin-bottom: 9px;
+  font-size: 19px;
+}
+
+.product-info p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.product-info a {
+  display: inline-block;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 17px;
+}
+
+/* SERVICES */
+
+.services {
+  background: white;
+}
+
+/* BRANDS */
+
+.brands {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+
+.brands h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.brands p {
+  color: #c5d2e0;
+}
+
+.brand-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-top: 35px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
 }
 
 /* CTA */
 
 .cta {
-    background: linear-gradient(110deg, #142b45, #225476);
-    color: #fff;
-    padding: 55px 0;
-}
-
-.cta-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 75px 20px;
 }
 
 .cta h2 {
-    color: #fff;
-    margin: 0 0 8px;
+  font-size: 34px;
+  margin-bottom: 15px;
 }
 
 .cta p {
-    color: #d4e0e9;
-    margin: 0;
-    font-size: 14px;
+  color: #dce8f4;
+  margin-bottom: 25px;
 }
 
 /* CONTACT */
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
-.contact-info {
-    display: grid;
-    gap: 14px;
-    margin-top: 22px;
+.contact-info h2 {
+  color: var(--navy);
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.contact-info p {
+  color: var(--muted);
 }
 
 .contact-item {
-    padding: 15px;
-    border: 1px solid var(--line);
-    border-radius: 7px;
-}
-
-.contact-item small {
-    display: block;
-    color: var(--muted);
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 800;
+  margin-top: 25px;
 }
 
 .contact-item strong {
-    font-size: 14px;
-    color: var(--navy);
+  display: block;
+  color: var(--navy);
 }
 
-form {
-    display: grid;
-    gap: 12px;
+.contact-item a {
+  color: var(--blue);
 }
 
-.field {
-    display: grid;
-    gap: 5px;
+.contact-form {
+  background: var(--light);
+  padding: 30px;
+  border-radius: 10px;
 }
 
-.field label {
-    font-size: 12px;
-    font-weight: 700;
-    color: #425466;
+.contact-form h3 {
+  color: var(--navy);
+  margin-bottom: 20px;
 }
 
-input,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #d7e0e7;
-    border-radius: 5px;
-    font: 14px Arial;
-    background: #fff;
-    color: var(--ink);
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dce3eb;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
 }
 
-textarea {
-    min-height: 105px;
-    resize: vertical;
+.contact-form textarea {
+  height: 125px;
+  resize: vertical;
 }
 
-.form-note {
-    font-size: 11px;
-    color: var(--muted);
+.contact-form button {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 /* FOOTER */
 
 footer {
-    background: #0d2033;
-    color: #d5e0e8;
-    padding: 28px 0;
-}
-
-.footer-inner {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-footer .brand {
-    color: #fff;
-}
-
-footer .brand small {
-    color: #a9bbc9;
+  background: #0b1729;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
 }
 
 footer p {
-    font-size: 11px;
-    color: #a9bbc9;
-    margin: 6px 0 0;
+  color: #aebdce;
+  font-size: 13px;
+  margin-top: 10px;
 }
 
-footer a {
-    color: #fff;
-    font-size: 12px;
+footer .logo {
+  justify-content: center;
+  margin: 0 auto;
 }
 
-/* WHATSAPP FLOAT BUTTON */
-
-.whatsapp-float {
-    position: fixed;
-    right: 22px;
-    bottom: 22px;
-    z-index: 99;
-    background: #25D366;
-    color: #fff;
-    padding: 13px 18px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: 800;
-    box-shadow: 0 5px 18px #0003;
+footer .logo img {
+  height: 60px;
+  width: auto;
+  max-width: 230px;
+  object-fit: contain;
 }
 
-.whatsapp-float:hover {
-    background: #1eae54;
+/* FLOATING CONTACT BUTTONS */
+
+.floating-contact {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 200;
+}
+
+.floating-contact a {
+  color: white;
+  padding: 13px 19px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+  transition: .2s;
+}
+
+.floating-contact a:hover {
+  transform: translateY(-3px);
+}
+
+.whatsapp {
+  background: #20b85a;
+}
+
+.email-button {
+  background: #174b80;
 }
 
 /* RESPONSIVE */
 
-@media(max-width: 850px) {
-    nav {
-        gap: 13px;
-        font-size: 12px;
-    }
+@media(max-width: 900px) {
 
-    .nav-cta {
-        padding: 10px 12px;
-        font-size: 11px;
-    }
+  .nav-links {
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .about-grid,
+  .founder-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid,
+  .services-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 
-@media(max-width: 760px) {
-    .nav {
-        flex-wrap: wrap;
-        padding: 12px 0;
-    }
+@media(max-width: 550px) {
 
-    nav {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 8px 0;
-    }
+  nav {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
 
-    .hero {
-        padding: 58px 0;
-    }
+  .logo img {
+    height: 48px;
+    max-width: 190px;
+  }
 
-    .hero-grid,
-    .split,
-    .contact-grid,
-    .founder-grid {
-        grid-template-columns: 1fr;
-    }
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 11px;
+  }
 
-    .hero-visual {
-        min-height: 260px;
-    }
+  .hero {
+    padding: 80px 0;
+  }
 
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
+  section {
+    padding: 60px 0;
+  }
 
-    .steps {
-        grid-template-columns: 1fr;
-    }
+  .card-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .cta-inner {
-        align-items: flex-start;
-        flex-direction: column;
-    }
+  .section-heading h2,
+  .about-text h2,
+  .founder-info h2 {
+    font-size: 28px;
+  }
 
-    .brand-list {
-        gap: 16px;
-    }
+  .brand-list {
+    gap: 20px;
+    font-size: 17px;
+  }
 
-    .checks {
-        grid-template-columns: 1fr 1fr;
-    }
+  .founder-photo {
+    min-height: 360px;
+  }
 
-    .founder-photo {
-        max-width: 420px;
-    }
+  .founder-photo img {
+    width: 190px;
+    height: 230px;
+  }
+
+  .floating-contact {
+    bottom: 15px;
+    right: 15px;
+    gap: 8px;
+  }
+
+  .floating-contact a {
+    padding: 11px 15px;
+    font-size: 12px;
+  }
 }
 
-@media(max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .checks {
-        grid-template-columns: 1fr;
-    }
-
-    .hero p {
-        font-size: 15px;
-    }
-
-    .trust-inner {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .brand-list {
-        font-size: 13px;
-    }
-
-    .brand {
-        font-size: 17px;
-    }
-
-    .logo {
-        width: 42px;
-        height: 42px;
-    }
-
-    .founder-image {
-        height: 320px;
-    }
-
-    .whatsapp-float {
-        right: 12px;
-        bottom: 12px;
-    }
-}
 </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <header>
-    <div class="container nav">
+  <nav class="container">
 
-        <a class="brand" href="#home">
-            <img src="images/2logo.svg" alt="Vionic Systems Logo" class="logo">
-            <span>
-                VIONIC SYSTEMS
-                <small>INDUSTRIAL AUTOMATION & ENGINEERING</small>
-            </span>
-        </a>
+    <a href="#home" class="logo">
+      <img src="images/2logo.svg" alt="Vionic Systems Logo">
+    </a>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#services">Services</a>
-            <a href="#future">Future Solutions</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <a class="nav-cta" href="#contact">Send an Enquiry</a>
-
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#founder">Founder</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </div>
+
+    <a class="nav-btn" href="#contact">Get a Quote</a>
+
+  </nav>
 </header>
 
 <main>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
-    <div class="container hero-grid">
+  <div class="container hero-content">
 
-        <div>
-
-            <div class="eyebrow">
-                Industrial Automation • Electrical • Engineering
-            </div>
-
-            <h1>
-                Your Industrial Sourcing & Engineering Partner.
-            </h1>
-
-            <div class="hero-tagline">
-                Sourcing Technology. Delivering Engineering. Enabling Automation.
-            </div>
-
-            <p>
-                From sourcing industrial electrical and automation components
-                to providing engineering services and developing intelligent
-                industrial solutions, Vionic Systems connects businesses with
-                reliable products, technical expertise and practical solutions.
-            </p>
-
-            <div class="hero-actions">
-                <a class="btn" href="#contact">Discuss Your Requirement</a>
-                <a class="btn-outline" href="#products">Explore Products</a>
-            </div>
-
-            <div class="hero-note">
-                Based in Pune, Maharashtra, India · Supporting industrial requirements
-            </div>
-
-        </div>
-
-        <div class="hero-visual" aria-label="Industrial control panel illustration">
-
-            <div class="panel">
-                <div class="panel-top"></div>
-
-                <div class="panel-row">
-                    <div class="device"></div>
-                    <div class="device"></div>
-                    <div class="device"></div>
-                </div>
-
-                <div class="panel-row">
-                    <div class="device"></div>
-                    <div class="device"></div>
-                </div>
-
-                <div class="panel-label">
-                    INDUSTRIAL CONTROL SYSTEM
-                </div>
-            </div>
-
-            <div class="float-tag">
-                AUTOMATION & CONTROL
-            </div>
-
-        </div>
-
+    <div class="eyebrow">
+      Industrial Automation & Engineering
     </div>
+
+    <h1>
+      Powering Industry Through
+      <span>Smart Automation.</span>
+    </h1>
+
+    <p>
+      Your sourcing and engineering partner for industrial electricals,
+      automation components, robotics and intelligent manufacturing solutions.
+    </p>
+
+    <a href="#products" class="btn btn-orange">
+      Explore Products
+    </a>
+
+    <a href="#contact" class="btn btn-outline">
+      Discuss Your Requirement
+    </a>
+
+  </div>
 
 </section>
 
-
-<!-- BRANDS -->
-
-<div class="trust">
-
-    <div class="container trust-inner">
-
-        <div class="trust-label">
-            Brands and technologies we can help source
-        </div>
-
-        <div class="brand-list">
-            <span>SIEMENS</span>
-            <span>Schneider Electric</span>
-            <span>ABB</span>
-            <span>SICK</span>
-            <span>Mitsubishi Electric</span>
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- ABOUT -->
+<!-- ABOUT COMPANY -->
 
 <section id="about">
 
-    <div class="container split">
+  <div class="container about-grid">
 
-        <div>
+    <div class="about-image"></div>
 
-            <div class="kicker">About Vionic Systems</div>
+    <div class="about-text">
 
-            <h2>
-                Connecting industrial requirements with the right solutions.
-            </h2>
+      <div class="eyebrow">Who We Are</div>
 
-            <p class="intro">
-                Vionic Systems is an industrial sourcing and engineering
-                business focused on electrical products, automation components
-                and practical technical support.
-                We help manufacturers, machine builders and industrial
-                businesses source the products they need, including
-                difficult-to-find components and application-specific items.
-                Alongside product sourcing, we provide engineering support
-                for industrial electrical and automation requirements.
-            </p>
+      <h2>
+        Practical Solutions. Reliable Connections.
+      </h2>
 
-            <div class="checks">
+      <p>
+        Vionic Systems is a growing industrial solutions company
+        focused on the trading and supply of industrial electrical
+        products, robotics and automation components, sensors,
+        and industrial safety systems.
+      </p>
 
-                <div class="check">
-                    <span class="tick">✓</span>
-                    Requirement-focused sourcing
-                </div>
+      <p>
+        We help industries source quality products through reliable
+        supplier networks, practical technical support, timely
+        response, and value-driven service.
+      </p>
 
-                <div class="check">
-                    <span class="tick">✓</span>
-                    Competitive quotations
-                </div>
+      <p>
+        Beyond component supply, we offer additional technical
+        assistance, including installation support, panel wiring,
+        sensor fitting, component replacement, troubleshooting,
+        and maintenance support.
+      </p>
 
-                <div class="check">
-                    <span class="tick">✓</span>
-                    Hard-to-find components
-                </div>
+      <p>
+        As we expand our engineering capabilities, we are working
+        toward delivering advanced industrial automation solutions
+        across machine vision, smart warehousing, robotics,
+        and intelligent inspection.
+      </p>
 
-                <div class="check">
-                    <span class="tick">✓</span>
-                    Practical engineering support
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="highlight">
-
-            <h3>
-                More than product sourcing.
-            </h3>
-
-            <p>
-                We aim to make industrial procurement and engineering
-                support simpler through responsive communication,
-                suitable product options and practical technical assistance.
-            </p>
-
-            <div class="mini">
-
-                <div>
-                    <strong>Product Sourcing</strong>
-                    Electrical and automation components
-                </div>
-
-                <div>
-                    <strong>Engineering Support</strong>
-                    Installation and troubleshooting
-                </div>
-
-                <div>
-                    <strong>Multiple Makes</strong>
-                    Options across leading brands
-                </div>
-
-                <div>
-                    <strong>Customer Focus</strong>
-                    Clear, requirement-based support
-                </div>
-
-            </div>
-
-        </div>
+      <ul class="check-list">
+        <li>Industrial electrical and automation products</li>
+        <li>Competitive and value-driven sourcing</li>
+        <li>Practical technical assistance</li>
+        <li>Customer-focused engineering solutions</li>
+      </ul>
 
     </div>
 
+  </div>
+
 </section>
 
+<!-- BUSINESS PILLARS -->
 
-<!-- PRODUCTS -->
+<section class="pillars">
 
-<section class="soft" id="products">
+  <div class="container">
 
-    <div class="container">
-
-        <div class="section-head">
-
-            <div class="kicker">Products & Sourcing</div>
-
-            <h2>
-                Industrial electrical & automation components.
-            </h2>
-
-            <p>
-                We help source industrial products across multiple makes
-                and specifications. Share your product name, part number,
-                quantity or technical requirement to enquire.
-            </p>
-
-        </div>
-
-        <div class="grid">
-
-            <article class="card">
-                <div class="card-icon">▦</div>
-                <h3>PLC & Controllers</h3>
-                <p>
-                    Programmable logic controllers, I/O modules,
-                    control units and automation accessories.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">↗</div>
-                <h3>VFDs & Drives</h3>
-                <p>
-                    Variable frequency drives, motor control,
-                    servo drives and motion-related components.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">⌁</div>
-                <h3>Sensors</h3>
-                <p>
-                    Inductive, capacitive, photoelectric,
-                    proximity and industrial sensing solutions.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">⚡</div>
-                <h3>Switchgear & Protection</h3>
-                <p>
-                    MCBs, MCCBs, MPCBs, contactors, relays
-                    and circuit protection products.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">⏚</div>
-                <h3>Power Supplies & Accessories</h3>
-                <p>
-                    Industrial SMPS units, terminal blocks,
-                    control power and electrical accessories.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">◎</div>
-                <h3>Machine Vision Components</h3>
-                <p>
-                    Industrial cameras, vision components,
-                    lighting and inspection-related products.
-                </p>
-            </article>
-
-        </div>
-
+    <div class="section-heading">
+      <div class="eyebrow">Our Business</div>
+      <h2>Three Pillars of Vionic Systems</h2>
+      <p>
+        From industrial component supply to intelligent
+        automation solutions.
+      </p>
     </div>
 
-</section>
+    <div class="services-grid">
 
-
-<!-- ENGINEERING SERVICES -->
-
-<section id="services">
-
-    <div class="container">
-
-        <div class="section-head">
-
-            <div class="kicker">Engineering Services</div>
-
-            <h2>
-                Engineering support beyond component supply.
-            </h2>
-
-            <p>
-                Practical assistance for industrial electrical,
-                control panel and automation-related requirements.
-            </p>
-
-        </div>
-
-        <div class="grid">
-
-            <article class="card">
-                <div class="card-icon">▤</div>
-                <h3>Control Panel Wiring</h3>
-                <p>
-                    Control panel wiring, component mounting,
-                    electrical connections and panel-related work.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">⚙</div>
-                <h3>Installation & Integration</h3>
-                <p>
-                    Support for installation and integration of
-                    electrical and automation components,
-                    sensors and control devices.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">⌕</div>
-                <h3>Troubleshooting & Maintenance</h3>
-                <p>
-                    Assistance with electrical faults,
-                    component replacement, maintenance
-                    and machine-side troubleshooting.
-                </p>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- HOW WE WORK -->
-
-<section class="soft">
-
-    <div class="container">
-
-        <div class="section-head">
-
-            <div class="kicker">How We Work</div>
-
-            <h2>
-                A straightforward approach to every requirement.
-            </h2>
-
-            <p>
-                Clear communication and coordinated support
-                from enquiry to supply.
-            </p>
-
-        </div>
-
-        <div class="steps">
-
-            <div class="step">
-                <b>01 / UNDERSTAND</b>
-                <h3>Share your requirement</h3>
-                <p>
-                    Send us the product name, part number,
-                    quantity, make or application details.
-                </p>
-            </div>
-
-            <div class="step">
-                <b>02 / SOURCE</b>
-                <h3>We explore suitable options</h3>
-                <p>
-                    We check sourcing possibilities and
-                    prepare a requirement-based quotation.
-                </p>
-            </div>
-
-            <div class="step">
-                <b>03 / SUPPORT</b>
-                <h3>Move ahead with confidence</h3>
-                <p>
-                    We coordinate the next steps and remain
-                    available for related product and
-                    engineering support.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FUTURE SOLUTIONS -->
-
-<section id="future">
-
-    <div class="container">
-
-        <div class="section-head">
-
-            <div class="kicker">Developing Capabilities</div>
-
-            <h2>
-                Building towards intelligent industrial solutions.
-            </h2>
-
-            <p>
-                Our long-term focus is to expand into automation,
-                machine vision and intelligent manufacturing.
-                These capabilities are being developed in phases.
-            </p>
-
-        </div>
-
-        <div class="future-label">
-            UNDER DEVELOPMENT
-        </div>
-
-        <div class="grid">
-
-            <article class="card">
-                <div class="card-icon">▤</div>
-                <h3>Warehouse & Material Handling</h3>
-                <p>
-                    Exploring automation concepts for material
-                    movement, storage and warehouse operations.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">◎</div>
-                <h3>Machine Vision & Inspection</h3>
-                <p>
-                    Vision-based inspection concepts for
-                    product verification, quality checks
-                    and industrial applications.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">⌕</div>
-                <h3>OCR & Barcode Verification</h3>
-                <p>
-                    Automated reading and verification
-                    of product codes, labels and markings.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">⚙</div>
-                <h3>Automatic Counting & Sorting</h3>
-                <p>
-                    Developing concepts for component
-                    counting, identification and sorting.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">⇢</div>
-                <h3>Conveyor & Packaging Automation</h3>
-                <p>
-                    Exploring conveyor-based inspection,
-                    product handling and packaging systems.
-                </p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">◇</div>
-                <h3>3D Micro-Inspection</h3>
-                <p>
-                    Research and development into tunable-lens
-                    and 3D imaging-based inspection applications.
-                </p>
-            </article>
-
-        </div>
-
-        <p class="future-note">
-            These are developing capabilities and are not presented
-            as currently available turnkey services.
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Industrial Products & Supply</h3>
+        <p>
+          PLCs, VFDs, electrical protection devices, sensors,
+          contactors, industrial safety products and robotics components.
         </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚙</div>
+        <h3>Engineering & Technical Services</h3>
+        <p>
+          Panel wiring, installation assistance, sensor integration,
+          component replacement, troubleshooting and technical support.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>Advanced Automation Solutions</h3>
+        <p>
+          Machine vision, AGV/AMR systems, automated counting,
+          intelligent sorting, packaging and inspection solutions.
+        </p>
+      </div>
 
     </div>
 
+  </div>
+
 </section>
 
+<!-- VISION -->
+
+<section class="vision">
+
+  <div class="container">
+
+    <div class="eyebrow">Our Vision</div>
+
+    <h2>Making Intelligent Automation Accessible</h2>
+
+    <p>
+      To become a trusted industrial solutions partner,
+      delivering practical, scalable and cost-effective technologies
+      — from individual components and technical support to
+      complete intelligent automation systems.
+      We aim to support the growth of India's manufacturing
+      and logistics sectors by making advanced technologies
+      accessible to businesses of all sizes.
+    </p>
+
+  </div>
+
+</section>
 
 <!-- FOUNDER -->
 
-<section class="soft" id="founder">
+<section class="founder-section" id="founder">
 
-    <div class="container founder-grid">
+  <div class="container founder-grid">
 
-        <div class="founder-photo">
+    <div class="founder-photo">
 
-            <img
-                src="images/image.jpeg"
-                alt="Hatim Sadliwala, Founder of Vionic Systems"
-                class="founder-image"
-            >
+      <img
+        src="images/image.jpeg"
+        alt="Hatim Sadliwala - Founder of Vionic Systems"
+      >
 
-        </div>
+      <h3>Hatim Sadliwala</h3>
 
-        <div>
-
-            <div class="kicker">Leadership</div>
-
-            <h2>
-                Driven by engineering. Focused on practical solutions.
-            </h2>
-
-            <h3 style="color:#1f5278; margin-bottom:4px;">
-                Hatim Sadliwala
-            </h3>
-
-            <p class="founder-role">
-                Founder / Proprietor
-            </p>
-
-            <p class="intro">
-                Hatim Sadliwala is the Founder of Vionic Systems
-                and holds a Master's degree in Mechatronics from Germany.
-                With an academic foundation in mechatronics and
-                hands-on exposure to robotics, automation and
-                machine vision, he brings an engineering-oriented
-                approach to industrial requirements.
-            </p>
-
-            <p class="intro" style="margin-top:14px;">
-                His focus is to build Vionic Systems into a reliable
-                industrial sourcing and engineering partner,
-                connecting quality products with practical
-                technical solutions.
-            </p>
-
-        </div>
+      <p>FOUNDER · VIONIC SYSTEMS</p>
 
     </div>
+
+    <div class="founder-info">
+
+      <div class="eyebrow">Leadership & Vision</div>
+
+      <h2>Meet the Founder</h2>
+
+      <h3>Hatim Gulzar Sadliwala</h3>
+
+      <div class="founder-degree">
+        M.Sc. Mechatronics | Germany
+      </div>
+
+      <p>
+        Hatim Gulzar Sadliwala is the Founder of Vionic Systems
+        and a Mechatronics Engineer with a Master's degree
+        in Mechatronics from Germany.
+      </p>
+
+      <p>
+        His academic and technical experience in Germany
+        developed a strong interest in industrial automation,
+        robotics, and machine vision. This expertise led to
+        the establishment of Vionic Systems, focused on
+        delivering reliable automation solutions for Indian industries.
+      </p>
+
+      <p>
+        His vision is to build Vionic Systems into a trusted
+        provider of practical and affordable automation solutions.
+        He aims to support the growth of India's manufacturing
+        and logistics sectors by making advanced technologies
+        such as machine vision, robotics, warehouse automation,
+        and intelligent material handling more accessible
+        to businesses of all sizes.
+      </p>
+
+    </div>
+
+  </div>
 
 </section>
 
+<!-- PRODUCTS -->
 
-<!-- CALL TO ACTION -->
+<section class="products" id="products">
 
-<div class="cta">
+  <div class="container">
 
-    <div class="container cta-inner">
+    <div class="section-heading">
 
-        <div>
+      <div class="eyebrow">Our Product Range</div>
 
-            <h2>
-                Have an industrial requirement?
-            </h2>
+      <h2>Industrial Automation Products</h2>
 
-            <p>
-                Share your enquiry, product list or technical
-                requirement with Vionic Systems.
-            </p>
-
-        </div>
-
-        <a class="btn" href="#contact">
-            Contact Vionic Systems
-        </a>
+      <p>
+        Quality components for control, protection,
+        monitoring and automation applications.
+      </p>
 
     </div>
 
-</div>
+    <div class="card-grid">
 
+      <div class="product-card">
+
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800')">
+        </div>
+
+        <div class="product-info">
+          <h3>PLC & Controllers</h3>
+          <p>
+            Programmable logic controllers, industrial controllers,
+            I/O modules and automation accessories.
+          </p>
+          <a href="#contact">ENQUIRE NOW →</a>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092335397-9fa3411d9e2c?w=800')">
+        </div>
+
+        <div class="product-info">
+          <h3>VFD & Motor Drives</h3>
+          <p>
+            Variable frequency drives, motor control solutions
+            and drive accessories.
+          </p>
+          <a href="#contact">ENQUIRE NOW →</a>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=800')">
+        </div>
+
+        <div class="product-info">
+          <h3>Industrial Sensors</h3>
+          <p>
+            Proximity, photoelectric, inductive, capacitive
+            and measurement sensors.
+          </p>
+          <a href="#contact">ENQUIRE NOW →</a>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800')">
+        </div>
+
+        <div class="product-info">
+          <h3>Electrical Protection</h3>
+          <p>
+            MCBs, MCCBs, MPCBs, circuit protection
+            and electrical distribution products.
+          </p>
+          <a href="#contact">ENQUIRE NOW →</a>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800')">
+        </div>
+
+        <div class="product-info">
+          <h3>Contactors & Relays</h3>
+          <p>
+            Industrial contactors, auxiliary relays,
+            overload relays and control accessories.
+          </p>
+          <a href="#contact">ENQUIRE NOW →</a>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+
+        <div class="product-image"
+          style="background-image:url('https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800')">
+        </div>
+
+        <div class="product-info">
+          <h3>Machine Vision Components</h3>
+          <p>
+            Industrial cameras, vision sensors,
+            lighting and inspection components.
+          </p>
+          <a href="#contact">ENQUIRE NOW →</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ENGINEERING SERVICES -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">What We Do</div>
+
+      <h2>Engineering & Automation Services</h2>
+
+      <p>
+        Supporting industries with practical engineering
+        assistance and developing automation capabilities.
+      </p>
+
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">⚙</div>
+        <h3>Control Panel Wiring</h3>
+        <p>
+          Electrical panel wiring, component integration,
+          assembly and installation assistance.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>Robotics & Automation</h3>
+        <p>
+          Robotics integration, industrial automation
+          and customised manufacturing solutions.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">◉</div>
+        <h3>Machine Vision & Inspection</h3>
+        <p>
+          Vision-based inspection, object detection,
+          counting, defect detection and quality control.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⌁</div>
+        <h3>Electrical Installation</h3>
+        <p>
+          Electrical fitting, sensor installation,
+          panel wiring and commissioning assistance.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Technical Support</h3>
+        <p>
+          Component replacement, troubleshooting,
+          maintenance assistance and technical guidance.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">▦</div>
+        <h3>Smart Automation Development</h3>
+        <p>
+          AGV/AMR, barcode scanning, intelligent material handling,
+          automated counting, sorting and packaging concepts.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BRANDS -->
+
+<section class="brands">
+
+  <div class="container">
+
+    <h2>Supporting Leading Industrial Technologies</h2>
+
+    <p>
+      We source products from established industrial
+      automation brands, subject to availability.
+    </p>
+
+    <div class="brand-list">
+      <span>SIEMENS</span>
+      <span>ABB</span>
+      <span>Schneider</span>
+      <span>SICK</span>
+      <span>Mitsubishi</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Looking for an Automation Solution?</h2>
+
+    <p>
+      Share your product requirement or engineering
+      challenge with Vionic Systems.
+    </p>
+
+    <a href="#contact" class="btn btn-orange">
+      Send Your Enquiry
+    </a>
+
+  </div>
+
+</section>
 
 <!-- CONTACT -->
 
 <section id="contact">
 
-    <div class="container contact-grid">
+  <div class="container contact-grid">
 
-        <div>
+    <div class="contact-info">
 
-            <div class="kicker">Contact Us</div>
+      <div class="eyebrow">Get In Touch</div>
 
-            <h2>
-                Let's discuss your requirement.
-            </h2>
+      <h2>Let's Discuss Your Requirement.</h2>
 
-            <p class="intro">
-                For product enquiries, quotations, sourcing
-                assistance or engineering support,
-                get in touch with Vionic Systems.
-            </p>
+      <p>
+        Looking for a specific automation product,
+        electrical component or engineering solution?
+        Contact Vionic Systems.
+      </p>
 
-            <div class="contact-info">
+      <div class="contact-item">
+        <strong>Company</strong>
+        Vionic Systems
+      </div>
 
-                <div class="contact-item">
-                    <small>Phone / WhatsApp</small>
-                    <strong>+91 97668 10125</strong>
-                </div>
+      <div class="contact-item">
+        <strong>Address</strong>
+        Shop No. 8, Sagar Plaza, Mumbai–Pune Road,
+        Near Nashik Phata, Kasarwadi,
+        Pune, Maharashtra – 411034
+      </div>
 
-                <div class="contact-item">
-                    <small>Email</small>
-                    <strong>vionicsystems@gmail.com</strong>
-                </div>
+      <div class="contact-item">
+        <strong>Email</strong>
+        <a href="mailto:vionicsystems@gmail.com">
+          vionicsystems@gmail.com
+        </a>
+      </div>
 
-                <div class="contact-item">
-                    <small>Location</small>
-                    <strong>
-                        Shop No. 8, Sagar Plaza, Old Mumbai - Pune Hwy,
-                        near Nashik Phata, Kasarwadi,
-                        Pune, Maharashtra 411034
-                    </strong>
-                </div>
+      <div class="contact-item">
+        <strong>Office</strong>
+        <a href="tel:+917385398355">
+          +91 7385398355
+        </a>
+      </div>
 
-            </div>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Send an Enquiry</h3>
-
-            <form id="enquiryForm">
-
-                <div class="field">
-                    <label for="name">Your Name</label>
-                    <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        placeholder="Enter your name"
-                    >
-                </div>
-
-                <div class="field">
-                    <label for="company">Company</label>
-                    <input
-                        id="company"
-                        name="company"
-                        type="text"
-                        placeholder="Company name"
-                    >
-                </div>
-
-                <div class="field">
-                    <label for="contact">Email or Phone</label>
-                    <input
-                        id="contact"
-                        name="contact"
-                        type="text"
-                        required
-                        placeholder="Your contact details"
-                    >
-                </div>
-
-                <div class="field">
-                    <label for="requirement">Your Requirement</label>
-                    <textarea
-                        id="requirement"
-                        name="requirement"
-                        required
-                        placeholder="Product, make, part number, quantity or service required"
-                    ></textarea>
-                </div>
-
-                <button class="btn" type="submit">
-                    Send Enquiry on WhatsApp
-                </button>
-
-                <div class="form-note">
-                    Your enquiry will open in WhatsApp so you can
-                    review and send it directly.
-                </div>
-
-            </form>
-
-        </div>
+      <div class="contact-item">
+        <strong>Founder – Hatim Sadliwala</strong>
+        <a href="tel:+919766810125">
+          +91 9766810125
+        </a>
+      </div>
 
     </div>
+
+    <form class="contact-form" onsubmit="sendEnquiry(event)">
+
+      <h3>Send an Enquiry</h3>
+
+      <input
+        id="name"
+        type="text"
+        placeholder="Your Name"
+        required
+      >
+
+      <input
+        id="email"
+        type="email"
+        placeholder="Email Address"
+        required
+      >
+
+      <input
+        id="phone"
+        type="tel"
+        placeholder="Phone Number"
+      >
+
+      <textarea
+        id="message"
+        placeholder="Tell us about your requirement..."
+        required
+      ></textarea>
+
+      <button type="submit" class="btn btn-orange">
+        Send Enquiry via WhatsApp
+      </button>
+
+    </form>
+
+  </div>
 
 </section>
 
 </main>
 
-
 <!-- FOOTER -->
 
 <footer>
 
-    <div class="container footer-inner">
+  <div class="container">
 
-        <div>
-
-            <a class="brand" href="#home">
-
-                <img
-                    src="images/2logo.svg"
-                    alt="Vionic Systems Logo"
-                    class="logo"
-                >
-
-                <span>
-                    VIONIC SYSTEMS
-                    <small>INDUSTRIAL AUTOMATION & ENGINEERING</small>
-                </span>
-
-            </a>
-
-            <p>
-                Industrial sourcing, electrical products
-                and engineering support · Pune, India
-            </p>
-
-        </div>
-
-        <div>
-
-            <a href="#home">Back to Top ↑</a>
-
-            <p>
-                © <span id="year"></span>
-                Vionic Systems. All rights reserved.
-            </p>
-
-        </div>
-
+    <div class="logo">
+      <img src="images/2logo.svg" alt="Vionic Systems Logo">
     </div>
+
+    <p>
+      Industrial Products | Automation | Robotics | Engineering Solutions
+    </p>
+
+    <p>
+      © <span id="year"></span> Vionic Systems.
+      All Rights Reserved.
+    </p>
+
+    <p>
+      Pune, Maharashtra, India
+    </p>
+
+  </div>
 
 </footer>
 
+<!-- FLOATING EMAIL AND WHATSAPP BUTTONS -->
 
-<!-- WHATSAPP FLOATING BUTTON -->
+<div class="floating-contact">
 
-<a
-    class="whatsapp-float"
-    href="https://wa.me/919766810125"
+  <a
+    class="email-button"
+    href="mailto:vionicsystems@gmail.com"
+  >
+    ✉ Email Us
+  </a>
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/917385398355"
     target="_blank"
-    rel="noopener"
-    aria-label="Contact Vionic Systems on WhatsApp"
->
+    rel="noopener noreferrer"
+  >
     WhatsApp Us
-</a>
+  </a>
 
+</div>
+
+<!-- JAVASCRIPT -->
 
 <script>
 
-// Automatically update copyright year
+const WHATSAPP_NUMBER = "917385398355";
+
 document.getElementById("year").textContent =
-    new Date().getFullYear();
+  new Date().getFullYear();
 
+function sendEnquiry(event) {
 
-// Enquiry form: prepare WhatsApp message
-document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+  event.preventDefault();
 
-    e.preventDefault();
+  const name =
+    document.getElementById("name").value.trim();
 
-    const name = document.getElementById("name").value.trim();
-    const company = document.getElementById("company").value.trim();
-    const contact = document.getElementById("contact").value.trim();
-    const requirement = document.getElementById("requirement").value.trim();
+  const email =
+    document.getElementById("email").value.trim();
 
-    const message =
-        "Hello Vionic Systems,%0A%0A" +
-        "I would like to make an enquiry.%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Company: " + encodeURIComponent(company || "Not provided") + "%0A" +
-        "Contact: " + encodeURIComponent(contact) + "%0A%0A" +
-        "Requirement:%0A" + encodeURIComponent(requirement);
+  const phone =
+    document.getElementById("phone").value.trim();
 
-    const whatsappNumber = "919766810125";
+  const message =
+    document.getElementById("message").value.trim();
 
-    const whatsappURL =
-        "https://wa.me/" + whatsappNumber + "?text=" + message;
+  const text =
+    "Hello Vionic Systems,\n\n" +
+    "Name: " + name + "\n" +
+    "Email: " + email + "\n" +
+    "Phone: " + phone + "\n" +
+    "Requirement: " + message;
 
-    window.open(whatsappURL, "_blank");
+  const whatsappURL =
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent(text);
 
-});
+  window.open(
+    whatsappURL,
+    "_blank",
+    "noopener,noreferrer"
+  );
+
+}
 
 </script>
 
