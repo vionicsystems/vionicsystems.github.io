@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,244 +6,275 @@
 
 <title>Vionic Systems | Industrial Automation & Engineering Solutions</title>
 
-<meta name="description" content="Vionic Systems Pune provides industrial electrical products, PLCs, VFDs, automation components, machine vision solutions, control panel manufacturing and engineering services.">
+<meta name="description" content="Vionic Systems Pune supplies industrial electrical products, automation components, machine vision systems and engineering services.">
+
+<meta name="keywords" content="Vionic Systems, Industrial Automation Pune, Electrical Products, PLC, HMI, VFD, Machine Vision, Control Panels, Robotics">
 
 <style>
 :root {
-    --navy: #101f35;
-    --blue: #174b80;
-    --orange: #f28b30;
-    --light: #f4f7fb;
-    --white: #ffffff;
-    --text: #27364a;
-    --muted: #66758a;
-    --border: #e1e7ef;
+  --navy:#101f35;
+  --blue:#174b80;
+  --orange:#f28b30;
+  --light:#f4f7fb;
+  --text:#263448;
+  --muted:#68778a;
+  --white:#fff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
+
+html { scroll-behavior:smooth; }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text);
-    line-height: 1.6;
-    background: var(--white);
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  line-height:1.7;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+a { text-decoration:none; color:inherit; }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-section {
-    padding: 75px 0;
-    scroll-margin-top: 80px;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-title h2 {
-    color: var(--navy);
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-
-.section-title p {
-    color: var(--muted);
-    max-width: 700px;
-    margin: auto;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-    border: none;
-}
-
-.btn-primary {
-    background: var(--orange);
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #db741b;
-}
-
-.btn-outline {
-    border: 2px solid white;
-    color: white;
-}
-
-.btn-outline:hover {
-    background: white;
-    color: var(--navy);
+  width:90%;
+  max-width:1160px;
+  margin:auto;
 }
 
 /* NAVIGATION */
 
 header {
-    background: var(--navy);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 15px rgba(0,0,0,.07);
 }
 
-.navbar {
-    min-height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+nav {
+  min-height:78px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.logo {
+  display:inline-flex;
+  align-items:center;
+  flex-shrink:0;
 }
 
 .logo img {
-    width: 175px;
-    max-height: 58px;
-    object-fit: contain;
+  height:60px;
+  width:auto;
+  max-width:230px;
+  object-fit:contain;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 23px;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  font-size:13px;
+  font-weight:bold;
 }
 
-.nav-links a {
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-}
+.nav-links a:hover { color:var(--orange); }
 
-.nav-links a:hover {
-    color: var(--orange);
-}
-
-.menu-toggle {
-    display: none;
-    color: white;
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
+.nav-btn {
+  background:var(--orange);
+  color:white;
+  padding:11px 19px;
+  border-radius:5px;
+  font-weight:bold;
 }
 
 /* HERO */
 
 .hero {
-    background:
-        linear-gradient(110deg, rgba(10,25,45,0.94), rgba(23,75,128,0.82)),
-        url("images/PLC.webp") center/cover no-repeat;
-    color: white;
-    min-height: 520px;
-    display: flex;
-    align-items: center;
+  background:
+    linear-gradient(110deg,rgba(10,25,45,.96),rgba(20,58,94,.82)),
+    url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1800");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:125px 0;
 }
 
-.hero-content {
-    max-width: 720px;
-    padding: 65px 0;
+.hero-content { max-width:750px; }
+
+.eyebrow {
+  color:var(--orange);
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:3px;
+  text-transform:uppercase;
 }
 
 .hero h1 {
-    font-size: clamp(36px, 5vw, 54px);
-    line-height: 1.15;
-    margin-bottom: 20px;
+  font-size:clamp(38px,6vw,65px);
+  line-height:1.12;
+  margin:22px 0;
 }
 
-.hero h1 span {
-    color: var(--orange);
-}
+.hero h1 span { color:var(--orange); }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 28px;
-    color: #e6edf6;
+  color:#d5dfeb;
+  font-size:17px;
+  max-width:650px;
+  margin-bottom:30px;
 }
 
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+.btn {
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:5px;
+  font-weight:bold;
+  margin:5px 8px 5px 0;
+  transition:.2s;
+}
+
+.btn-orange {
+  background:var(--orange);
+  color:white;
+}
+
+.btn-outline {
+  border:1px solid white;
+  color:white;
+}
+
+.btn:hover { transform:translateY(-3px); }
+
+/* GENERAL SECTIONS */
+
+section { padding:85px 0; }
+
+.section-heading {
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.section-heading .eyebrow { margin-bottom:10px; }
+
+.section-heading h2 {
+  font-size:34px;
+  color:var(--navy);
+  margin-bottom:12px;
+  line-height:1.3;
+}
+
+.section-heading p {
+  max-width:750px;
+  margin:auto;
+  color:var(--muted);
 }
 
 /* ABOUT */
 
-.about {
-    background: var(--light);
-}
-
 .about-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 45px;
-    align-items: center;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
 }
 
-.about h3 {
-    color: var(--blue);
-    margin-bottom: 12px;
-    font-size: 23px;
+.about-image {
+  min-height:410px;
+  border-radius:10px;
+  background:url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1000") center/cover;
 }
 
-.about p {
-    margin-bottom: 15px;
-    color: var(--muted);
+.about-text h2,
+.founder-info h2 {
+  font-size:34px;
+  color:var(--navy);
+  line-height:1.25;
+  margin:15px 0;
 }
 
-.about-image img {
-    width: 100%;
-    max-height: 360px;
-    object-fit: cover;
-    border-radius: 12px;
+.about-text p,
+.founder-info p {
+  color:var(--muted);
+  margin:15px 0;
 }
 
-/* FOUNDER */
-
-.founder {
-    margin-top: 45px;
-    padding: 30px;
-    background: white;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    display: grid;
-    grid-template-columns: 190px 1fr;
-    gap: 28px;
-    align-items: center;
+.check-list {
+  list-style:none;
+  margin-top:20px;
 }
 
-.founder img {
-    width: 190px;
-    height: 210px;
-    object-fit: cover;
-    border-radius: 9px;
+.check-list li {
+  margin:12px 0;
+  font-weight:600;
 }
 
-.founder h3 {
-    color: var(--navy);
+.check-list li::before {
+  content:"✓";
+  color:var(--orange);
+  font-weight:bold;
+  margin-right:12px;
 }
 
-.founder .designation {
-    color: var(--orange);
-    font-weight: bold;
-    margin-bottom: 12px;
+/* FOUNDER SUBSECTION */
+
+.founder-section {
+  background:var(--light);
+  margin-top:75px;
+  padding:65px 0;
+}
+
+.founder-grid {
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:55px;
+  align-items:center;
+}
+
+.founder-photo {
+  min-height:430px;
+  border-radius:10px;
+  background:linear-gradient(145deg,#102640,#24527b);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  text-align:center;
+  padding:30px;
+  overflow:hidden;
+}
+
+.founder-photo img {
+  width:220px;
+  height:260px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.founder-photo h3 { font-size:23px; }
+
+.founder-photo p {
+  color:#d5dfeb;
+  font-size:13px;
+  letter-spacing:2px;
+}
+
+.founder-info h3 {
+  color:var(--blue);
+  font-size:18px;
+}
+
+.founder-degree {
+  color:var(--orange);
+  font-weight:bold;
+  margin-top:8px;
 }
 
 /* PRODUCT CATEGORIES */
