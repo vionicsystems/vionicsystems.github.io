@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vionic Systems | Industrial Automation & Engineering Solutions</title>
-<meta name="description" content="Vionic Systems Pune provides industrial electrical products, automation components, PLCs, VFDs, machine vision components, control panel manufacturing and engineering solutions.">
+
+<meta name="description" content="Vionic Systems Pune provides industrial electrical products, PLCs, VFDs, automation components, machine vision solutions, control panel manufacturing and engineering services.">
 
 <style>
 :root {
@@ -14,20 +15,17 @@
     --blue: #174b80;
     --orange: #f28b30;
     --light: #f4f7fb;
-    --text: #26364a;
-    --muted: #66758a;
     --white: #ffffff;
+    --text: #27364a;
+    --muted: #66758a;
+    --border: #e1e7ef;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
     scroll-behavior: smooth;
-    scroll-padding-top: 85px;
 }
 
 body {
@@ -50,52 +48,70 @@ a {
 
 section {
     padding: 75px 0;
+    scroll-margin-top: 80px;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .section-title h2 {
-    font-size: 34px;
     color: var(--navy);
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 .section-title p {
     color: var(--muted);
-    max-width: 720px;
+    max-width: 700px;
     margin: auto;
 }
 
-.tag {
+.btn {
     display: inline-block;
-    background: #fff0e2;
-    color: #a8540d;
-    padding: 6px 13px;
-    border-radius: 20px;
-    font-size: 12px;
+    padding: 12px 24px;
+    border-radius: 5px;
     font-weight: bold;
-    margin-bottom: 14px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
 }
 
-/* HEADER */
+.btn-primary {
+    background: var(--orange);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #db741b;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--navy);
+}
+
+/* NAVIGATION */
 
 header {
     background: var(--navy);
-    color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
 
 .navbar {
-    min-height: 78px;
+    min-height: 76px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -114,26 +130,18 @@ header {
 .nav-links a {
     color: white;
     font-size: 14px;
-    font-weight: 600;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
 .nav-links a:hover {
     color: var(--orange);
 }
 
-.nav-contact {
-    background: var(--orange);
-    color: white !important;
-    padding: 10px 17px;
-    border-radius: 5px;
-}
-
 .menu-toggle {
     display: none;
     color: white;
-    background: transparent;
-    border: 0;
+    background: none;
+    border: none;
     font-size: 28px;
     cursor: pointer;
 }
@@ -141,19 +149,24 @@ header {
 /* HERO */
 
 .hero {
-    background: linear-gradient(120deg, rgba(16,31,53,0.96), rgba(23,75,128,0.90));
+    background:
+        linear-gradient(110deg, rgba(10,25,45,0.94), rgba(23,75,128,0.82)),
+        url("images/PLC.webp") center/cover no-repeat;
     color: white;
-    padding: 110px 0;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
-    max-width: 760px;
+    max-width: 720px;
+    padding: 65px 0;
 }
 
 .hero h1 {
-    font-size: 48px;
-    line-height: 1.2;
-    margin-bottom: 22px;
+    font-size: clamp(36px, 5vw, 54px);
+    line-height: 1.15;
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
@@ -162,43 +175,21 @@ header {
 
 .hero p {
     font-size: 18px;
-    color: #e0e8f2;
-    margin-bottom: 30px;
-    max-width: 680px;
+    margin-bottom: 28px;
+    color: #e6edf6;
 }
 
-.btn {
-    display: inline-block;
-    padding: 13px 23px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background: var(--orange);
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #db741c;
-    transform: translateY(-2px);
-}
-
-.btn-outline {
-    border: 1px solid white;
-    color: white;
-    margin-left: 10px;
-}
-
-.btn-outline:hover {
-    background: white;
-    color: var(--navy);
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 /* ABOUT */
+
+.about {
+    background: var(--light);
+}
 
 .about-grid {
     display: grid;
@@ -207,32 +198,20 @@ header {
     align-items: center;
 }
 
-.about-text h3 {
+.about h3 {
     color: var(--blue);
+    margin-bottom: 12px;
     font-size: 23px;
-    margin-bottom: 14px;
 }
 
-.about-text p {
+.about p {
     margin-bottom: 15px;
     color: var(--muted);
 }
 
-.about-highlight {
-    background: var(--light);
-    border-left: 4px solid var(--orange);
-    padding: 23px;
-    border-radius: 6px;
-    margin-top: 20px;
-}
-
-.about-highlight strong {
-    color: var(--navy);
-}
-
 .about-image img {
     width: 100%;
-    max-height: 370px;
+    max-height: 360px;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -240,27 +219,26 @@ header {
 /* FOUNDER */
 
 .founder {
-    background: var(--light);
+    margin-top: 45px;
     padding: 30px;
-    border-radius: 10px;
-    margin-top: 35px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--border);
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 30px;
+    grid-template-columns: 190px 1fr;
+    gap: 28px;
     align-items: center;
 }
 
 .founder img {
-    width: 100%;
-    height: 230px;
+    width: 190px;
+    height: 210px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 9px;
 }
 
 .founder h3 {
     color: var(--navy);
-    font-size: 24px;
-    margin-bottom: 5px;
 }
 
 .founder .designation {
@@ -271,28 +249,19 @@ header {
 
 /* PRODUCT CATEGORIES */
 
-.products-section {
-    background: var(--light);
-}
-
 .product-category {
-    background: white;
-    padding: 28px;
-    border-radius: 12px;
-    margin-bottom: 35px;
-    box-shadow: 0 5px 20px rgba(16,31,53,0.05);
+    margin-bottom: 55px;
 }
 
 .category-heading {
-    border-bottom: 2px solid #e9eef4;
-    padding-bottom: 17px;
-    margin-bottom: 25px;
+    border-left: 5px solid var(--orange);
+    padding-left: 16px;
+    margin-bottom: 24px;
 }
 
 .category-heading h3 {
     color: var(--navy);
     font-size: 25px;
-    margin-bottom: 5px;
 }
 
 .category-heading p {
@@ -303,11 +272,11 @@ header {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+    gap: 20px;
 }
 
 .product-card {
-    border: 1px solid #e9edf2;
+    border: 1px solid var(--border);
     border-radius: 9px;
     overflow: hidden;
     background: white;
@@ -318,16 +287,16 @@ header {
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 22px rgba(16,31,53,0.10);
+    box-shadow: 0 8px 25px rgba(16,31,53,0.10);
 }
 
 .product-image {
-    height: 170px;
-    padding: 12px;
-    background: white;
+    height: 175px;
+    background: #f8fafc;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
 
 .product-image img {
@@ -337,41 +306,36 @@ header {
 }
 
 .product-info {
-    padding: 15px;
-    flex: 1;
+    padding: 16px;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .product-info h4 {
     color: var(--navy);
     font-size: 16px;
-    margin-bottom: 7px;
-}
-
-.product-info p {
-    color: var(--muted);
-    font-size: 13px;
     margin-bottom: 12px;
 }
 
-.product-enquire {
+.product-info a {
     color: var(--blue);
-    font-size: 13px;
     font-weight: bold;
+    font-size: 13px;
     margin-top: auto;
 }
 
-.product-enquire:hover {
+.product-info a:hover {
     color: var(--orange);
 }
 
-/* BRANDS */
+/* BRAND LOGOS */
 
 .brand-area {
-    margin-top: 28px;
-    padding-top: 20px;
-    border-top: 1px solid #e9edf2;
+    background: var(--light);
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 25px;
 }
 
 .brand-area h4 {
@@ -382,22 +346,15 @@ header {
 
 .brand-logos {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 22px;
-}
-
-.brand-logo {
-    width: 100px;
-    height: 48px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 25px;
 }
 
-.brand-logo img {
-    max-width: 100%;
-    max-height: 42px;
+.brand-logos img {
+    width: auto;
+    max-width: 105px;
+    height: 42px;
     object-fit: contain;
 }
 
@@ -405,31 +362,49 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 9px;
-    margin-top: 12px;
+    margin-top: 14px;
 }
 
 .brand-tags span {
-    background: #edf2f7;
+    background: white;
+    border: 1px solid var(--border);
     color: var(--blue);
+    padding: 6px 12px;
     border-radius: 4px;
-    padding: 6px 11px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
 }
 
 /* SERVICES */
 
-.services-grid {
+.services {
+    background: var(--light);
+}
+
+.service-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
 }
 
 .service-card {
-    padding: 28px;
+    background: white;
+    padding: 27px;
     border-radius: 9px;
-    background: var(--light);
-    border-bottom: 3px solid var(--orange);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+.service-card .number {
+    color: var(--orange);
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .service-card h3 {
@@ -445,128 +420,117 @@ header {
 
 /* SOLUTIONS */
 
-.solutions-section {
-    background: var(--navy);
-    color: white;
+.solution-intro {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 30px;
+    color: var(--muted);
 }
 
-.solutions-section .section-title h2 {
-    color: white;
-}
-
-.solutions-section .section-title p {
-    color: #c6d2e0;
-}
-
-.rnd-label {
+.status {
     display: inline-block;
-    color: #ffd09e;
-    background: rgba(242,139,48,0.17);
-    border: 1px solid rgba(242,139,48,0.5);
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 12px;
+    background: #fff1df;
+    color: #a75b12;
+    padding: 5px 11px;
+    border-radius: 4px;
+    font-size: 11px;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
-.solutions-grid {
+.solution-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 22px;
 }
 
 .solution-card {
-    padding: 28px;
-    background: #1b304d;
+    border: 1px solid var(--border);
     border-radius: 9px;
-    border: 1px solid #344963;
+    padding: 25px;
+    background: white;
 }
 
 .solution-card h3 {
-    color: var(--orange);
+    color: var(--navy);
     margin-bottom: 10px;
 }
 
 .solution-card p {
-    color: #d0d9e5;
+    color: var(--muted);
     font-size: 14px;
 }
 
 /* CONTACT */
 
-.contact-section {
-    background: var(--light);
+.contact {
+    background: var(--navy);
+    color: white;
+}
+
+.contact .section-title h2 {
+    color: white;
+}
+
+.contact .section-title p {
+    color: #cbd6e4;
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 35px;
+    gap: 40px;
 }
 
-.contact-details,
+.contact-info h3,
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    color: #dce5f0;
+}
+
+.contact-info strong {
+    color: var(--orange);
+}
+
 .contact-form {
     background: white;
-    padding: 30px;
+    padding: 28px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(16,31,53,0.05);
-}
-
-.contact-details h3,
-.contact-form h3 {
     color: var(--navy);
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.contact-item {
-    margin-bottom: 17px;
-}
-
-.contact-item strong {
-    color: var(--navy);
-    display: block;
-}
-
-.contact-item a,
-.contact-item p {
-    color: var(--muted);
-    overflow-wrap: anywhere;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 13px;
-    border: 1px solid #dce3eb;
-    border-radius: 5px;
     margin-bottom: 14px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
     font-family: inherit;
     font-size: 14px;
 }
 
 .contact-form textarea {
-    min-height: 120px;
+    height: 120px;
     resize: vertical;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: 1px solid var(--blue);
+.contact-form button {
+    width: 100%;
 }
 
 /* FOOTER */
 
 footer {
-    background: #0b1728;
-    color: white;
-    padding: 30px 0;
+    background: #091525;
+    color: #cbd6e4;
+    padding: 25px 0;
     text-align: center;
-}
-
-footer p {
-    color: #b8c4d2;
     font-size: 13px;
 }
 
@@ -580,10 +544,10 @@ footer a {
     position: fixed;
     right: 20px;
     bottom: 20px;
+    z-index: 999;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 999;
 }
 
 .floating-contact a {
@@ -591,11 +555,10 @@ footer a {
     height: 50px;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: white;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 22px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.2);
 }
 
@@ -604,34 +567,22 @@ footer a {
 }
 
 .email-float {
-    background: var(--blue);
+    background: var(--orange);
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .nav-links {
-        gap: 13px;
-    }
-
-    .nav-links a {
-        font-size: 13px;
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 750px) {
-    section {
-        padding: 55px 0;
-    }
-
-    .navbar {
-        min-height: 70px;
-    }
-
+@media (max-width: 700px) {
     .menu-toggle {
         display: block;
     }
@@ -639,30 +590,32 @@ footer a {
     .nav-links {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 76px;
         left: 0;
-        right: 0;
+        width: 100%;
         background: var(--navy);
-        padding: 20px 5%;
+        padding: 20px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 18px;
+        gap: 17px;
     }
 
     .nav-links.active {
         display: flex;
     }
 
-    .hero {
-        padding: 75px 0;
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px;
     }
 
-    .hero h1 {
-        font-size: 36px;
+    .product-image {
+        height: 140px;
     }
 
     .about-grid,
-    .contact-grid {
+    .contact-grid,
+    .solution-grid {
         grid-template-columns: 1fr;
     }
 
@@ -671,79 +624,44 @@ footer a {
     }
 
     .founder img {
-        max-width: 260px;
+        width: 100%;
+        max-width: 240px;
     }
 
-    .product-grid {
+    .service-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .solutions-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 92%;
-    }
-
-    .hero h1 {
-        font-size: 31px;
-    }
-
-    .hero p {
-        font-size: 16px;
     }
 
     .section-title h2 {
         font-size: 28px;
     }
 
-    .product-category {
-        padding: 17px;
+    section {
+        padding: 55px 0;
     }
+}
 
-    .product-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-    }
-
-    .product-image {
-        height: 125px;
-        padding: 8px;
+@media (max-width: 450px) {
+    .product-grid,
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .product-info {
-        padding: 11px;
+        padding: 12px;
     }
 
     .product-info h4 {
         font-size: 14px;
     }
 
-    .product-info p {
-        font-size: 12px;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .btn-outline {
-        margin: 12px 0 0;
-    }
-
     .brand-logos {
-        gap: 12px;
+        gap: 15px;
     }
 
-    .brand-logo {
-        width: 80px;
+    .brand-logos img {
+        max-width: 80px;
+        height: 32px;
     }
 }
 </style>
@@ -751,13 +669,18 @@ footer a {
 
 <body>
 
+<!-- NAVIGATION -->
+
 <header>
     <div class="container navbar">
+
         <a href="#home" class="logo">
             <img src="images/2logo.svg" alt="Vionic Systems Logo">
         </a>
 
-        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+            ☰
+        </button>
 
         <nav class="nav-links" id="navLinks">
             <a href="#home" onclick="closeMenu()">Home</a>
@@ -765,668 +688,746 @@ footer a {
             <a href="#products" onclick="closeMenu()">Products</a>
             <a href="#services" onclick="closeMenu()">Services</a>
             <a href="#solutions" onclick="closeMenu()">Solutions</a>
-            <a href="#contact" class="nav-contact" onclick="closeMenu()">Contact Us</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
         </nav>
+
     </div>
 </header>
 
-<!-- HOME -->
+<!-- HERO -->
 
 <section class="hero" id="home">
     <div class="container">
         <div class="hero-content">
-            <span class="tag">Industrial Automation & Engineering</span>
+
             <h1>Powering Industry Through <span>Smart Automation</span></h1>
+
             <p>
-                Your engineering and sourcing partner for industrial electricals,
-                automation components, machine vision and practical industrial solutions.
+                Your sourcing partner for industrial electricals, automation
+                components, machine vision products and engineering solutions.
             </p>
-            <a href="#products" class="btn btn-primary">Explore Products</a>
-            <a href="#contact" class="btn btn-outline">Contact Us</a>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Explore Products</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+
         </div>
     </div>
 </section>
 
 <!-- ABOUT -->
 
-<section id="about">
+<section class="about" id="about">
     <div class="container">
+
         <div class="section-title">
-            <span class="tag">Who We Are</span>
             <h2>About Vionic Systems</h2>
-            <p>Engineering knowledge, dependable sourcing and practical industrial support.</p>
+            <p>Practical engineering support and reliable industrial sourcing.</p>
         </div>
 
         <div class="about-grid">
-            <div class="about-text">
-                <h3>Your Partner in Industrial Automation</h3>
+
+            <div>
+                <h3>Engineering Solutions for Industry</h3>
+
                 <p>
-                    Vionic Systems is a Pune-based industrial solutions company
-                    focused on supplying industrial electrical products,
-                    automation components, robotics and machine vision solutions.
-                </p>
-                <p>
-                    We aim to support manufacturers, machine builders and system
-                    integrators by sourcing quality products and providing practical
-                    technical assistance for their industrial requirements.
-                </p>
-                <p>
-                    Our approach is built around understanding customer requirements,
-                    identifying suitable products and delivering value-driven solutions.
+                    Vionic Systems is a growing industrial solutions company
+                    based in Pune, India. We focus on sourcing and supplying
+                    industrial electrical products, automation components,
+                    robotics and machine vision products.
                 </p>
 
-                <div class="about-highlight">
-                    <strong>Our Mission</strong>
-                    <p>
-                        To make reliable and practical industrial automation
-                        technologies more accessible to Indian industries.
-                    </p>
-                </div>
+                <p>
+                    We aim to support manufacturers, machine builders,
+                    system integrators and industrial businesses with
+                    quality products, competitive pricing and responsive
+                    technical assistance.
+                </p>
+
+                <p>
+                    Our approach combines product sourcing with practical
+                    engineering knowledge to help customers identify
+                    suitable components for their applications.
+                </p>
             </div>
 
             <div class="about-image">
-                <img src="images/PLC.webp" alt="Industrial automation PLC equipment">
+                <img src="images/PLC.webp" alt="Industrial automation components">
             </div>
+
         </div>
 
         <!-- FOUNDER SUBSECTION -->
 
         <div class="founder">
-            <img src="images/image.jpeg" alt="Hatim Sadliwala, Founder of Vionic Systems">
+
+            <img src="images/image.jpeg" alt="Founder of Vionic Systems">
 
             <div>
-                <span class="tag">Our Founder</span>
-                <h3>Hatim Gulzar Sadliwala</h3>
-                <p class="designation">Founder – Vionic Systems | M.Sc. Mechatronics</p>
-                <p>
-                    Hatim holds a Master's degree in Mechatronics from Germany
-                    and a Bachelor's degree in Mechatronics from India.
-                    His academic and technical experience developed his interest
-                    in industrial automation, robotics, machine vision and
-                    intelligent manufacturing.
+                <h3>Meet the Founder</h3>
+
+                <p class="designation">
+                    Hatim Gulzar Sadliwala | Founder
                 </p>
+
                 <p>
-                    Through Vionic Systems, he aims to bring practical,
-                    affordable and reliable automation solutions to Indian industries.
+                    Hatim holds a Master's degree in Mechatronics from
+                    Germany and a Bachelor's degree in Mechatronics
+                    Engineering from India.
+                </p>
+
+                <p>
+                    His academic and technical experience has developed
+                    a strong interest in industrial automation, robotics,
+                    machine vision and intelligent manufacturing.
+                </p>
+
+                <p>
+                    Through Vionic Systems, he aims to make practical and
+                    affordable automation solutions more accessible to
+                    Indian industries.
                 </p>
             </div>
+
         </div>
+
     </div>
 </section>
 
 <!-- PRODUCTS -->
 
-<section class="products-section" id="products">
-<div class="container">
+<section id="products">
+    <div class="container">
 
-    <div class="section-title">
-        <span class="tag">Our Product Range</span>
-        <h2>Products & Components</h2>
-        <p>
-            Industrial electrical products, automation components and
-            machine vision technologies sourced according to your requirements.
+        <div class="section-title">
+            <h2>Our Products</h2>
+            <p>
+                Industrial electricals, automation components and machine
+                vision products sourced for industrial applications.
+            </p>
+        </div>
+
+        <!-- CATEGORY 1 -->
+
+        <div class="product-category">
+
+            <div class="category-heading">
+                <h3>01. Industrial Electricals</h3>
+                <p>Electrical components and accessories for industrial control panels and machinery.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Circuit Breaker.png" alt="Circuit Breakers" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Circuit Breakers</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/SMPS.png" alt="SMPS Power Supplies" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>SMPS Power Supplies</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/terminal-connectors.png" alt="Terminal Blocks" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Terminal Blocks</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Contactors.webp" alt="Contactors" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Contactors</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/relays.png" alt="Industrial Relays" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Relays</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/TRANSFORMERS.png" alt="Industrial Transformers" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Transformers</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Push Button Switch.png" alt="Push Button Switches" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Push Button Switches</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/SPD.png" alt="Surge Protection Devices" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Surge Protection Devices</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Cables.png" alt="Electrical Cables and Accessories" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Control Panel Accessories</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="brand-area">
+                <h4>Brands Available</h4>
+
+                <div class="brand-logos">
+                    <img src="images/Schneider_Electric-Logo.wine.svg" alt="Schneider Electric">
+                    <img src="images/Siemens-Logo.wine.svg" alt="Siemens">
+                    <img src="images/ABB_Group-Logo.wine.svg" alt="ABB">
+                    <img src="images/Omron-Logo.wine.svg" alt="Omron">
+                </div>
+
+                <div class="brand-tags">
+                    <span>L&T</span>
+                    <span>WAGO</span>
+                    <span>Mean Well</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CATEGORY 2 -->
+
+        <div class="product-category">
+
+            <div class="category-heading">
+                <h3>02. Control Products & Automation Components</h3>
+                <p>Control, motion, sensing and automation components for industrial applications.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/PLC.webp" alt="Programmable Logic Controllers" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>PLC Controllers</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/HMI.png" alt="Human Machine Interface" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>HMI Panels</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/VFD.png" alt="Variable Frequency Drives" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>VFD & Motor Drives</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Actuator.png" alt="Industrial Actuators" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Actuators</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Stepper-vs-Servo-motor.png" alt="Stepper and Servo Motors" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Drivers & Motors</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Linear Mech.png" alt="Linear Motion Mechanisms" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Linear Mechanisms</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Ball screw.png" alt="Ball Screw Mechanisms" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Ball Screws</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Sensor.png" alt="Industrial Sensors" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Industrial Sensors</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Safety Sensor.png" alt="Industrial Safety Sensors" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Safety Sensors</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Communication.png" alt="Industrial Communication Modules" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Communication Modules</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="brand-area">
+                <h4>Brands Available</h4>
+
+                <div class="brand-logos">
+                    <img src="images/Schneider_Electric-Logo.wine.svg" alt="Schneider Electric">
+                    <img src="images/Siemens-Logo.wine.svg" alt="Siemens">
+                    <img src="images/Mitsubishi_Electric-Logo.wine.svg" alt="Mitsubishi Electric">
+                    <img src="images/ABB_Group-Logo.wine.svg" alt="ABB">
+                    <img src="images/Omron-Logo.wine.svg" alt="Omron">
+                    <img src="images/Logo_SICK_AG_2009.svg" alt="SICK">
+                </div>
+
+                <div class="brand-tags">
+                    <span>Delta</span>
+                    <span>Festo</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CATEGORY 3 -->
+
+        <div class="product-category">
+
+            <div class="category-heading">
+                <h3>03. Machine Vision Components</h3>
+                <p>Imaging, optics and illumination components for inspection and measurement applications.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Smart Camera.png" alt="Industrial Smart Cameras" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Industrial Smart Cameras</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Vision Camera.png" alt="Industrial Vision Cameras" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Vision Cameras</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Vision illumination.png" alt="Machine Vision Illumination" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Vision Illumination</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Lens.png" alt="Optical Lenses" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Optical Lenses</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/ETL.png" alt="Electrically Tunable Lens" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Electrically Tunable Lenses (ETL)</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/extention tube.png" alt="Vision Extension Tubes" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Extension Tubes & Cubes</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Cables.png" alt="Machine Vision Cables" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h4>Vision Cables</h4>
+                        <a href="#contact">Enquire Now →</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="brand-area">
+                <h4>Brands Available</h4>
+
+                <div class="brand-logos">
+                    <img src="images/Logo_SICK_AG_2009.svg" alt="SICK">
+                </div>
+
+                <div class="brand-tags">
+                    <span>Cognex</span>
+                    <span>Keyence</span>
+                    <span>Thorlabs</span>
+                    <span>Basler</span>
+                    <span>Optotune</span>
+                </div>
+            </div>
+
+        </div>
+
+        <p style="text-align:center;color:#66758a;font-size:13px;">
+            Product availability and brands are subject to sourcing and confirmation.
+            Contact us for product specifications and quotations.
         </p>
+
     </div>
-
-    <!-- CATEGORY 1 -->
-
-    <div class="product-category">
-        <div class="category-heading">
-            <h3>01. Industrial Electricals</h3>
-            <p>Electrical control, protection and panel-building components.</p>
-        </div>
-
-        <div class="product-grid">
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Circuit Breaker.png" alt="Circuit breakers" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Circuit Breakers</h4>
-                    <p>MCB, MCCB and MPCB for electrical protection.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/SMPS.png" alt="Switch mode power supplies" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>SMPS</h4>
-                    <p>Power supplies for industrial control applications.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/terminal-connectors.png" alt="Terminal blocks and connectors" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Terminal Blocks</h4>
-                    <p>Industrial terminal blocks and electrical connectors.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Contactors.webp" alt="Industrial contactors" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Contactors</h4>
-                    <p>Switching and motor control components.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/relays.png" alt="Industrial relays" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Relays</h4>
-                    <p>Control, interface and monitoring relays.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/TRANSFORMERS.png" alt="Industrial transformers" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Transformers</h4>
-                    <p>Industrial control and power transformers.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Push Button Switch.png" alt="Push button switches" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Push Button Switches</h4>
-                    <p>Industrial push buttons and operator controls.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/SPD.png" alt="Surge protection devices" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Surge Protection Devices</h4>
-                    <p>Protection against transient voltage surges.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="brand-area">
-            <h4>Brands Available</h4>
-            <div class="brand-logos">
-                <div class="brand-logo"><img src="images/Schneider_Electric-Logo.wine.svg" alt="Schneider Electric"></div>
-                <div class="brand-logo"><img src="images/Siemens-Logo.wine.svg" alt="Siemens"></div>
-                <div class="brand-logo"><img src="images/ABB_Group-Logo.wine.svg" alt="ABB"></div>
-                <div class="brand-logo"><img src="images/Omron-Logo.wine.svg" alt="Omron"></div>
-            </div>
-            <div class="brand-tags">
-                <span>L&T</span>
-                <span>WAGO</span>
-                <span>Mean Well</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- CATEGORY 2 -->
-
-    <div class="product-category">
-        <div class="category-heading">
-            <h3>02. Control Products & Automation Components</h3>
-            <p>Control, motion, sensing and industrial automation components.</p>
-        </div>
-
-        <div class="product-grid">
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/PLC.webp" alt="Programmable logic controllers" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>PLC</h4>
-                    <p>Programmable logic controllers for machine automation.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/HMI.png" alt="Human machine interface" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>HMI</h4>
-                    <p>Operator interfaces and industrial touch panels.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/VFD.png" alt="Variable frequency drives" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>VFD</h4>
-                    <p>Variable frequency drives and motor speed control.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Actuator.png" alt="Industrial actuators" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Actuators</h4>
-                    <p>Actuation solutions for industrial machinery.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Stepper-vs-Servo-motor.png" alt="Stepper and servo motors" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Drivers & Motors</h4>
-                    <p>Stepper and servo motors with compatible drives.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Linear Mech.png" alt="Linear motion mechanisms" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Linear Mechanisms</h4>
-                    <p>Linear motion components and positioning systems.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Ball screw.png" alt="Ball screw mechanisms" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Ball Screws</h4>
-                    <p>Precision motion transmission components.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Sensor.png" alt="Industrial sensors" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Industrial Sensors</h4>
-                    <p>Proximity, photoelectric and application-specific sensors.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Safety Sensor.png" alt="Industrial safety sensors" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Safety Sensors</h4>
-                    <p>Industrial safety sensing and detection components.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Communication.png" alt="Industrial communication modules" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Communication Modules</h4>
-                    <p>Industrial communication and connectivity components.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Cables.png" alt="Industrial cables" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Industrial Cables</h4>
-                    <p>Cables and connectivity accessories for automation.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="brand-area">
-            <h4>Brands Available</h4>
-            <div class="brand-logos">
-                <div class="brand-logo"><img src="images/Schneider_Electric-Logo.wine.svg" alt="Schneider Electric"></div>
-                <div class="brand-logo"><img src="images/Siemens-Logo.wine.svg" alt="Siemens"></div>
-                <div class="brand-logo"><img src="images/Mitsubishi_Electric-Logo.wine.svg" alt="Mitsubishi Electric"></div>
-                <div class="brand-logo"><img src="images/ABB_Group-Logo.wine.svg" alt="ABB"></div>
-                <div class="brand-logo"><img src="images/Omron-Logo.wine.svg" alt="Omron"></div>
-                <div class="brand-logo"><img src="images/Logo_SICK_AG_2009.svg" alt="SICK"></div>
-            </div>
-            <div class="brand-tags">
-                <span>Delta</span>
-                <span>Festo</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- CATEGORY 3 -->
-
-    <div class="product-category">
-        <div class="category-heading">
-            <h3>03. Machine Vision Components</h3>
-            <p>Imaging, optics, illumination and accessories for machine vision applications.</p>
-        </div>
-
-        <div class="product-grid">
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Smart Camera.png" alt="Industrial smart cameras" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Industrial Smart Cameras</h4>
-                    <p>Integrated vision systems for inspection and automation.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Vision Camera.png" alt="Industrial vision cameras" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Vision Cameras</h4>
-                    <p>Industrial imaging cameras for machine vision systems.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Vision illumination.png" alt="Machine vision illumination" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Vision Illumination</h4>
-                    <p>Lighting solutions for reliable image acquisition.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Lens.png" alt="Optical lenses" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Optical Lenses</h4>
-                    <p>Optical lenses for industrial imaging applications.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/ETL.png" alt="Electrically tunable lens" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>ETL – Tunable Lenses</h4>
-                    <p>Electrically tunable optics for dynamic focusing applications.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/extention tube.png" alt="Extension tubes and optical accessories" loading="lazy">
-                </div>
-                <div class="product-info">
-                    <h4>Extension Tubes & Cubes</h4>
-                    <p>Optical extension and imaging accessories.</p>
-                    <a class="product-enquire" href="#contact">Enquire Now →</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="brand-area">
-            <h4>Brands Available</h4>
-            <div class="brand-logos">
-                <div class="brand-logo"><img src="images/Logo_SICK_AG_2009.svg" alt="SICK"></div>
-            </div>
-            <div class="brand-tags">
-                <span>Cognex</span>
-                <span>Keyence</span>
-                <span>Thorlabs</span>
-                <span>Basler</span>
-                <span>Optotune</span>
-            </div>
-        </div>
-    </div>
-
-</div>
 </section>
 
 <!-- SERVICES -->
 
-<section id="services">
-<div class="container">
-    <div class="section-title">
-        <span class="tag">What We Do</span>
-        <h2>Our Services</h2>
-        <p>Technical support and engineering services for industrial automation requirements.</p>
+<section class="services" id="services">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>
+                Technical support and engineering services for industrial
+                electrical and automation applications.
+            </p>
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="number">01</div>
+                <h3>Control Panel Manufacturing</h3>
+                <p>
+                    Design assistance, component selection, control panel
+                    assembly, wiring and testing.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="number">02</div>
+                <h3>Component Installation & Wiring</h3>
+                <p>
+                    Installation and wiring support for industrial
+                    electrical and automation components.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="number">03</div>
+                <h3>Troubleshooting & Maintenance</h3>
+                <p>
+                    Assistance with identifying faults and resolving
+                    electrical and automation-related issues.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="number">04</div>
+                <h3>PLC & HMI Programming</h3>
+                <p>
+                    PLC and HMI programming support for machine control
+                    and industrial automation applications.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="number">05</div>
+                <h3>Automation Integration</h3>
+                <p>
+                    Support for integrating sensors, drives, actuators
+                    and automation components into machinery.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="number">06</div>
+                <h3>Machine Vision Integration</h3>
+                <p>
+                    Application support for camera-based inspection,
+                    counting, measurement and quality control.
+                </p>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="services-grid">
-
-        <div class="service-card">
-            <h3>Control Panel Manufacturing</h3>
-            <p>Design assistance, component selection, assembly and wiring of industrial control panels.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Component Installation & Wiring</h3>
-            <p>Installation, replacement and wiring assistance for electrical and automation components.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Troubleshooting & Maintenance</h3>
-            <p>Technical assistance for electrical, control and automation-related issues.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>PLC & HMI Programming</h3>
-            <p>PLC logic development, HMI configuration and machine control support.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Automation Integration</h3>
-            <p>Integration support for sensors, drives, controllers and industrial automation systems.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Machine Vision Integration</h3>
-            <p>Vision system integration for inspection, detection, measurement and identification applications.</p>
-        </div>
-
-    </div>
-</div>
 </section>
 
 <!-- SOLUTIONS -->
 
-<section class="solutions-section" id="solutions">
-<div class="container">
-    <div class="section-title">
-        <span class="tag">Future Development</span>
-        <h2>Automation Solutions</h2>
-        <p>
-            We are exploring and developing practical automation solutions
-            to address real industrial challenges.
+<section id="solutions">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Future Solutions & Development</h2>
+            <p>Exploring practical automation solutions for manufacturing and logistics.</p>
+        </div>
+
+        <p class="solution-intro">
+            We are developing application-focused solutions that combine
+            machine vision, robotics, automation and intelligent control.
+            These concepts are currently under development and in the
+            research and development stage.
         </p>
+
+        <div class="solution-grid">
+
+            <div class="solution-card">
+                <span class="status">UNDER DEVELOPMENT</span>
+                <h3>Vision-Based Counting & Inspection</h3>
+                <p>
+                    Camera-based systems for automated part counting,
+                    presence detection, sorting and defect inspection.
+                </p>
+            </div>
+
+            <div class="solution-card">
+                <span class="status">UNDER DEVELOPMENT</span>
+                <h3>Automated Packaging Solutions</h3>
+                <p>
+                    Compact automation systems for accurate counting,
+                    batching and packaging of industrial components.
+                </p>
+            </div>
+
+            <div class="solution-card">
+                <span class="status">IN R&D</span>
+                <h3>Micro-Inspection & Quality Control</h3>
+                <p>
+                    Precision imaging and inspection concepts for
+                    micro-components, including part presence and
+                    quality verification.
+                </p>
+            </div>
+
+            <div class="solution-card">
+                <span class="status">IN R&D</span>
+                <h3>Smart Warehouse Automation</h3>
+                <p>
+                    Exploring AGV, AMR and intelligent material handling
+                    solutions for warehouse and manufacturing operations.
+                </p>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="solutions-grid">
-
-        <div class="solution-card">
-            <span class="rnd-label">Under Development / In R&D</span>
-            <h3>Vision-Based Counting & Inspection</h3>
-            <p>
-                Machine vision solutions for automated part counting,
-                identification, inspection and defect detection.
-            </p>
-        </div>
-
-        <div class="solution-card">
-            <span class="rnd-label">Under Development / In R&D</span>
-            <h3>Automated Packaging Solutions</h3>
-            <p>
-                Compact automation systems for accurate counting,
-                batching and packaging of industrial components.
-            </p>
-        </div>
-
-        <div class="solution-card">
-            <span class="rnd-label">Under Development / In R&D</span>
-            <h3>Micro-Inspection & Quality Control</h3>
-            <p>
-                High-precision imaging solutions for microchip inspection,
-                part presence verification and quality checking.
-            </p>
-        </div>
-
-        <div class="solution-card">
-            <span class="rnd-label">Under Development / In R&D</span>
-            <h3>Smart Warehouse Automation</h3>
-            <p>
-                Exploring AGV, AMR and intelligent material handling
-                solutions for warehouse and manufacturing operations.
-            </p>
-        </div>
-
-    </div>
-</div>
 </section>
 
 <!-- CONTACT -->
 
-<section class="contact-section" id="contact">
-<div class="container">
-    <div class="section-title">
-        <span class="tag">Get In Touch</span>
-        <h2>Contact Vionic Systems</h2>
-        <p>Have a product enquiry or automation requirement? Let's discuss your project.</p>
-    </div>
+<section class="contact" id="contact">
+    <div class="container">
 
-    <div class="contact-grid">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>
+                Have a requirement? Get in touch with us for product
+                enquiries, quotations and technical assistance.
+            </p>
+        </div>
 
-        <div class="contact-details">
-            <h3>Contact Information</h3>
+        <div class="contact-grid">
 
-            <div class="contact-item">
-                <strong>Company</strong>
-                <p>Vionic Systems</p>
-            </div>
+            <div class="contact-info">
 
-            <div class="contact-item">
-                <strong>Email</strong>
-                <a href="mailto:vionicsystems@gmail.com">vionicsystems@gmail.com</a>
-            </div>
+                <h3>Vionic Systems</h3>
 
-            <div class="contact-item">
-                <strong>Office Contact</strong>
-                <a href="tel:+917385398355">+91 73853 98355</a>
-            </div>
-
-            <div class="contact-item">
-                <strong>Founder Contact</strong>
-                <a href="tel:+919766812125">+91 97668 12125</a>
-            </div>
-
-            <div class="contact-item">
-                <strong>Address</strong>
                 <p>
+                    <strong>Address:</strong><br>
                     Shop No. 8, Sagar Plaza,<br>
                     Mumbai–Pune Road, Near Nashik Phata,<br>
-                    Kasarwadi, Pune, Maharashtra – 411034
+                    Kasarwadi, Pune, Maharashtra – 411034.
                 </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:vionicsystems@gmail.com">
+                        vionicsystems@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Office:</strong><br>
+                    <a href="tel:+917385398355">+91 73853 98355</a>
+                </p>
+
+                <p>
+                    <strong>Founder:</strong><br>
+                    <a href="tel:+919766812125">+91 97668 1125</a>
+                </p>
+
+                <p>
+                    <strong>Business Hours:</strong><br>
+                    Monday – Saturday
+                </p>
+
+                <a class="btn btn-primary"
+                   href="https://wa.me/917385398355"
+                   target="_blank"
+                   rel="noopener">
+                    Chat on WhatsApp
+                </a>
+
             </div>
 
-            <a class="btn btn-primary"
-               href="https://wa.me/917385398355"
-               target="_blank" rel="noopener">
-                Chat on WhatsApp
-            </a>
-        </div>
+            <div class="contact-form">
 
-        <div class="contact-form">
-            <h3>Send an Enquiry</h3>
+                <h3>Send an Enquiry</h3>
 
-            <form id="enquiryForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="text" id="company" placeholder="Company Name">
-                <input type="tel" id="phone" placeholder="Contact Number" required>
-                <input type="email" id="email" placeholder="Email Address">
-                <textarea id="message" placeholder="Tell us about your requirement..." required></textarea>
+                <form id="enquiryForm">
 
-                <button type="submit" class="btn btn-primary">
-                    Submit Enquiry via WhatsApp
-                </button>
-            </form>
+                    <input type="text" id="name"
+                           placeholder="Your Name" required>
+
+                    <input type="text" id="company"
+                           placeholder="Company Name">
+
+                    <input type="tel" id="phone"
+                           placeholder="Contact Number" required>
+
+                    <input type="email" id="email"
+                           placeholder="Email Address">
+
+                    <textarea id="message"
+                              placeholder="Tell us about your requirement..."
+                              required></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Submit Enquiry via WhatsApp
+                    </button>
+
+                </form>
+
+            </div>
+
         </div>
 
     </div>
-</div>
 </section>
 
 <!-- FOOTER -->
 
 <footer>
-<div class="container">
-    <p>© <span id="year"></span> Vionic Systems. All Rights Reserved.</p>
-    <p>Industrial Electricals | Automation Components | Machine Vision | Engineering Solutions</p>
-    <p>Designed to support smarter industrial operations.</p>
-</div>
+    <div class="container">
+        <p>
+            © <span id="year"></span> Vionic Systems. All Rights Reserved.
+        </p>
+        <p>Industrial Electricals | Automation | Machine Vision</p>
+    </div>
 </footer>
 
 <!-- FLOATING CONTACT BUTTONS -->
 
 <div class="floating-contact">
+
     <a class="whatsapp"
        href="https://wa.me/917385398355"
-       target="_blank" rel="noopener"
+       target="_blank"
+       rel="noopener"
        aria-label="WhatsApp">
-       WA
+        W
     </a>
 
     <a class="email-float"
        href="mailto:vionicsystems@gmail.com"
        aria-label="Email">
-       @
+        ✉
     </a>
+
 </div>
 
 <script>
@@ -1454,14 +1455,14 @@ document.getElementById("enquiryForm").addEventListener("submit", function(event
         "I would like to make an enquiry.%0A%0A" +
         "Name: " + encodeURIComponent(name) + "%0A" +
         "Company: " + encodeURIComponent(company) + "%0A" +
-        "Phone: " + encodeURIComponent(phone) + "%0A" +
+        "Contact: " + encodeURIComponent(phone) + "%0A" +
         "Email: " + encodeURIComponent(email) + "%0A" +
         "Requirement: " + encodeURIComponent(message);
 
-    window.open(
-        "https://wa.me/917385398355?text=" + whatsappMessage,
-        "_blank"
-    );
+    const whatsappURL =
+        "https://wa.me/917385398355?text=" + whatsappMessage;
+
+    window.open(whatsappURL, "_blank", "noopener");
 });
 </script>
 
