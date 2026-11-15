@@ -167,6 +167,7 @@ header {
     color: var(--navy);
 }
 
+
 /* PREMIUM HERO SECTION - ORIGINAL BACKGROUND RETAINED */
 
 .hero {
@@ -341,6 +342,7 @@ header {
     }
 }
 
+
 /* Mobile Responsive */
 
 @media (max-width: 768px) {
@@ -383,6 +385,7 @@ header {
     font-size: 10px;
   }
 }
+
 
 /* ABOUT SECTION */
 
@@ -483,7 +486,6 @@ header {
     font-size: 30px;
     margin: 12px 0 5px;
 }
-
 .founder-content h4 {
     color: var(--orange);
     font-size: 16px;
@@ -497,11 +499,10 @@ header {
     line-height: 1.9;
     margin-bottom: 15px;
 }
-
 .founder-degree {
-    color: var(--navy);
-    font-weight: bold;
-    margin-bottom: 18px;
+  color: var(--navy);
+  font-weight: bold;
+  margin-bottom: 18px;
 }
 
 /* ABOUT RESPONSIVE DESIGN */
@@ -559,7 +560,6 @@ header {
         font-size: 25px;
     }
 }
-
 /* PRODUCTS */
 
 #products {
@@ -869,26 +869,14 @@ header {
 }
 
 .contact-detail strong {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: block;
     color: var(--navy);
-    margin-bottom: 12px;
-}
-
-.contact-detail strong i {
-    color: var(--orange);
-    font-size: 18px;
-    width: 22px;
-    text-align: center;
+    margin-bottom: 3px;
 }
 
 .contact-detail a {
-    display: block;
     color: var(--blue);
 }
-
-/* CONTACT FORM */
 
 .contact-form {
     background: var(--white);
@@ -1117,32 +1105,32 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* BRAND LOGOS - MOBILE */
+/* BRAND LOGOS - MOBILE */
 
-    .brand-logos {
-        gap: 18px;
-    }
+.brand-logos {
+    gap: 18px;
+}
 
-    .brand-logos > img,
-    .brand-logo-item img {
-        width: 95px;
-        height: 42px;
-    }
+.brand-logos > img,
+.brand-logo-item img {
+    width: 95px;
+    height: 42px;
+}
 
-    .brand-logo-item {
-        width: 95px;
-        min-width: 95px;
-    }
+.brand-logo-item {
+    width: 95px;
+    min-width: 95px;
+}
 
-    .brand-logo-item span {
-        font-size: 11px;
-    }
+.brand-logo-item span {
+    font-size: 11px;
+}
 
-    .brands-content .brand-logos > img,
-    .brands-content .brand-logo-item img {
-        width: 105px;
-        height: 45px;
-    }
+.brands-content .brand-logos > img,
+.brands-content .brand-logo-item img {
+    width: 105px;
+    height: 45px;
+}
 
     .footer-content {
         flex-direction: column;
@@ -1159,92 +1147,106 @@ footer {
     .product-placeholder {
         height: 180px;
     }
+    .contact-detail strong {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
 }
 
-/* INDIVIDUAL BRAND LOGO SIZE ADJUSTMENTS */
+.contact-detail strong i {
+    color: var(--orange);
+    font-size: 18px;
+    width: 22px;
+    text-align: center;
+}
 
-/* Main Brands section */
+.contact-detail a {
+    display: block;
+    /* Improve visible logo size */
+
+.brand-logo-item {
+    width: 150px;
+    min-width: 150px;
+}
+
+.brand-logo-item img {
+    width: 150px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Individually enlarge logos that appear smaller */
+
+
+/* Individual Brand Logo Size Adjustments */
 
 .brands-content .brand-logos img[src*="meanwell"] {
-    transform: scale(1.35);
+    transform: scale(1.35) !important;
 }
 
 .brands-content .brand-logos img[src*="wago"] {
-    transform: scale(1.30);
+    transform: scale(1.30) !important;
 }
 
 .brands-content .brand-logos img[src*="thorlabs"] {
-    transform: scale(1.20);
+    transform: scale(1.40) !important;
 }
 
 .brands-content .brand-logos img[src*="optotune"] {
-    transform: scale(1.10);
+    transform: scale(1.30) !important;
 }
 
 .brands-content .brand-logos img[src*="basler"] {
-    transform: scale(1.30);
+    transform: scale(1.30) !important;
 }
 
 .brands-content .brand-logos img[src*="Logo_SICK_AG_2009"] {
-    transform: scale(1.30);
+    transform: scale(1.30) !important;
 }
 
 .brands-content .brand-logos img[src*="ABB_Group"] {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
 
 .brands-content .brand-logos img[src*="Schneider_Electric"] {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
 
 .brands-content .brand-logos img[src*="Siemens-Logo"] {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
 
 .brands-content .brand-logos img[src*="Mitsubishi_Electric"] {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
 
 .brands-content .brand-logos img[src*="L&T"] {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
 
 .brands-content .brand-logos img[src*="Delta"] {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
 
 .brands-content .brand-logos img[src*="Festo"] {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
 
 .brands-content .brand-logos img[src*="Omron"] {
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
+
 
 .brands-content .brand-logos img[src*="keyence"] {
-    transform: scale(1.10);
+    transform: scale(1.30) !important;
 }
 
-/* COGNEX LOGO - LARGER SIZE */
-
-.brands-content .brand-logos img[src*="cognex.svg"],
-.category-brands .brand-logos img[src*="cognex.svg"] {
-    width: 300px !important;
-    max-width: 300px !important;
-    height: 200px !important;
-    object-fit: contain !important;
-    transform: none !important;
-}
-
-/* MOBILE LOGO ADJUSTMENTS */
-
+/* Mobile adjustments */
 @media (max-width: 700px) {
-
-    .brands-content .brand-logos img[src*="cognex.svg"],
-    .category-brands .brand-logos img[src*="cognex.svg"] {
-        width: 180px !important;
-        max-width: 180px !important;
-        height: 75px !important;
+    .brands-content .brand-logos img[src*="cognex"] {
+        transform: scale(3.4) !important;
     }
 
     .brands-content .brand-logos img[src*="meanwell"],
@@ -1262,10 +1264,19 @@ footer {
     .brands-content .brand-logos img[src*="Festo"],
     .brands-content .brand-logos img[src*="Omron"],
     .brands-content .brand-logos img[src*="keyence"] {
-        transform: scale(1.15);
+        transform: scale(1.15) !important;
     }
+/* Cognex Logo - Direct Target */
+img[alt="Cognex"] {
+    width: 250px !important;
+    max-width: 250px !important;
+    height: 100px !important;
+    object-fit: contain !important;
+    transform: none !important;
+    outline: 2px solid red !important;
 }
-
+}
+}
 </style>
 </head>
 
@@ -1338,6 +1349,7 @@ footer {
 
   </div>
 </section>
+
 
 <!-- ABOUT -->
 <section class="about" id="about">
@@ -1902,6 +1914,8 @@ footer {
                 <img src="images/basler.svg" alt="Basler">
                 <img src="images/keyence.svg" alt="Keyence">
                 <img src="images/optotune.webp" alt="Optotune">
+               
+                
             </div>
 
         </div>
@@ -1934,11 +1948,13 @@ footer {
                     and engineering services.
                 </p>
 
+                      
                 <div class="contact-detail">
                     <strong><i class="fa-solid fa-phone"></i> Office / Enquiries</strong>
                     <a href="tel:+917385398355">+91 7385398355</a>
-                    <strong><i class="fa-solid fa-phone"></i> Hatim Sadliwala</strong>
-                    <a href="tel:+919766812125">+91 9766812125</a>
+                 </p>
+                <strong><i class="fa-solid fa-phone"></i> Hatim Sadliwala</strong>
+                    <a href="tel:+919766812125">+91 9766810125</a>
                 </div>
                 
                 <div class="contact-detail">
