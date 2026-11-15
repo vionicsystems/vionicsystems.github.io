@@ -655,19 +655,47 @@ header {
     margin-bottom: 15px;
 }
 
+/* BRAND LOGOS - UNIFORM SIZE */
+
 .brand-logos {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
     margin-bottom: 15px;
 }
 
-.brand-logos img {
-    max-width: 105px;
-    width: auto;
-    height: 42px;
+.brand-logos > img,
+.brand-logo-item img {
+    width: 130px;
+    height: 55px;
     object-fit: contain;
+    display: block;
+}
+
+/* Logo with brand name */
+
+.brand-logo-item {
+    width: 130px;
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.brand-logo-item img {
+    width: 130px;
+    height: 55px;
+}
+
+.brand-logo-item span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--navy);
+    text-align: center;
 }
 
 .brand-tags {
@@ -799,14 +827,17 @@ header {
     margin-bottom: 25px;
 }
 
+/* MAIN BRANDS SECTION */
+
 .brands-content .brand-logos {
     justify-content: center;
-    gap: 45px;
+    gap: 35px;
 }
 
-.brands-content .brand-logos img {
-    max-width: 125px;
-    height: 50px;
+.brands-content .brand-logos > img,
+.brands-content .brand-logo-item img {
+    width: 140px;
+    height: 60px;
 }
 
 /* CONTACT */
@@ -1074,14 +1105,32 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .brand-logos {
-        gap: 18px;
-    }
+/* BRAND LOGOS - MOBILE */
 
-    .brand-logos img {
-        max-width: 85px;
-        height: 35px;
-    }
+.brand-logos {
+    gap: 18px;
+}
+
+.brand-logos > img,
+.brand-logo-item img {
+    width: 95px;
+    height: 42px;
+}
+
+.brand-logo-item {
+    width: 95px;
+    min-width: 95px;
+}
+
+.brand-logo-item span {
+    font-size: 11px;
+}
+
+.brands-content .brand-logos > img,
+.brands-content .brand-logo-item img {
+    width: 105px;
+    height: 45px;
+}
 
     .footer-content {
         flex-direction: column;
