@@ -1253,6 +1253,120 @@ footer {
 }
 }
 }
+
+/* PRODUCT ENQUIRY INTERACTION */
+.product-card {
+    cursor: pointer;
+}
+.product-card:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 3px;
+}
+.product-card::after {
+    content: "Click to enquire";
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 11px;
+    border-radius: 4px;
+    background: #fff1e5;
+    color: #a9530b;
+    font-size: 11px;
+    font-weight: 700;
+}
+.enquiry-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    padding: 20px;
+    background: rgba(8, 20, 36, 0.72);
+    align-items: center;
+    justify-content: center;
+}
+.enquiry-modal.active {
+    display: flex;
+}
+.enquiry-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 620px;
+    max-height: 92vh;
+    overflow-y: auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 18px 55px rgba(0,0,0,.25);
+}
+.enquiry-modal-content h3 {
+    color: var(--navy);
+    font-size: 24px;
+    margin: 0 35px 6px 0;
+}
+.enquiry-modal-content .modal-intro {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.enquiry-modal-content .selected-product {
+    padding: 11px 13px;
+    margin-bottom: 18px;
+    border-left: 4px solid var(--orange);
+    border-radius: 4px;
+    background: #f4f7fb;
+    color: var(--navy);
+    font-weight: 700;
+}
+.enquiry-modal-close {
+    position: absolute;
+    top: 13px;
+    right: 17px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background: #eef2f6;
+    color: var(--navy);
+    font-size: 25px;
+    cursor: pointer;
+}
+.enquiry-modal-content .form-group {
+    margin-bottom: 13px;
+}
+.enquiry-modal-content .form-group input,
+.enquiry-modal-content .form-group textarea,
+.enquiry-modal-content .form-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font: inherit;
+    font-size: 14px;
+}
+.enquiry-modal-content .modal-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+.enquiry-modal-content .btn {
+    width: 100%;
+    margin-top: 5px;
+}
+.enquiry-modal-content .privacy-note {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 11px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .enquiry-modal-content {
+        padding: 24px 18px;
+    }
+    .enquiry-modal-content .modal-two-col {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
 </style>
 </head>
 
@@ -1465,55 +1579,55 @@ footer {
 
             <div class="product-grid">
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Circuit Breaker.png" alt="Circuit Breakers" loading="lazy">
                     <h4>Circuit Breakers</h4>
                     <p>MCB, MCCB and MPCB</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/SMPS.png" alt="SMPS" loading="lazy">
                     <h4>SMPS</h4>
                     <p>Industrial switching power supplies</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/terminal-connectors.png" alt="Terminal Blocks" loading="lazy">
                     <h4>Terminal Blocks</h4>
                     <p>Electrical terminal and connection systems</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Contactors.webp" alt="Contactors" loading="lazy">
                     <h4>Contactors</h4>
                     <p>Industrial switching and motor control</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/relays.png" alt="Relays" loading="lazy">
                     <h4>Relays</h4>
                     <p>Control and interface relays</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/TRANSFORMERS.png" alt="Transformers" loading="lazy">
                     <h4>Transformers</h4>
                     <p>Industrial control transformers</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Push Button Switch.png" alt="Push Button Switches" loading="lazy">
                     <h4>Push Button Switches</h4>
                     <p>Industrial push buttons and selector switches</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/SPD.png" alt="Surge Protection Devices" loading="lazy">
                     <h4>Surge Protection Devices</h4>
                     <p>SPD and electrical protection</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/panel.png" alt="Control Panel Accessories" loading="lazy">
                     <h4>Control Panel Accessories</h4>
                     <p>Cables and panel wiring accessories</p>
@@ -1550,61 +1664,61 @@ footer {
 
             <div class="product-grid">
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/PLC.webp" alt="PLC" loading="lazy">
                     <h4>PLC</h4>
                     <p>Programmable logic controllers</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/HMI.png" alt="HMI" loading="lazy">
                     <h4>HMI</h4>
                     <p>Human machine interface panels</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/VFD.png" alt="VFD" loading="lazy">
                     <h4>VFD</h4>
                     <p>Variable frequency drives</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Actuator.png" alt="Actuators" loading="lazy">
                     <h4>Actuators</h4>
                     <p>Industrial linear and rotary actuators</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Stepper-vs-Servo-motor.png" alt="Drivers and Motors" loading="lazy">
                     <h4>Drivers &amp; Motors</h4>
                     <p>Stepper and servo motor systems</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Linear Mech.png" alt="Linear Mechanisms" loading="lazy">
                     <h4>Linear Mechanisms</h4>
                     <p>Linear motion components and assemblies</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Ball screw.png" alt="Ball Screws" loading="lazy">
                     <h4>Ball Screws</h4>
                     <p>Precision motion transmission components</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Sensor.png" alt="Industrial Sensors" loading="lazy">
                     <h4>Sensors</h4>
                     <p>Proximity, photoelectric and other sensors</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Safety Sensor.png" alt="Safety Sensors" loading="lazy">
                     <h4>Safety Sensors</h4>
                     <p>Industrial machine safety sensors</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Communication.png" alt="Communication Modules" loading="lazy">
                     <h4>Communication Modules</h4>
                     <p>Industrial communication and networking</p>
@@ -1643,55 +1757,55 @@ footer {
 
             <div class="product-grid">
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Smart Camera.png" alt="Industrial Smart Cameras" loading="lazy">
                     <h4>Industrial Smart Cameras</h4>
                     <p>Integrated vision systems for inspection</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Vision Camera.png" alt="Vision Cameras" loading="lazy">
                     <h4>Vision Cameras</h4>
                     <p>Industrial cameras for image acquisition</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Vision illumination.png" alt="Vision Illumination" loading="lazy">
                     <h4>Vision Illumination</h4>
                     <p>Lighting solutions for machine vision</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Lens.png" alt="Optical Lenses" loading="lazy">
                     <h4>Optical Lenses</h4>
                     <p>Industrial and precision imaging lenses</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/ETL.png" alt="Tunable Lenses" loading="lazy">
                     <h4>ETL – Tunable Lenses</h4>
                     <p>Electrically tunable lens components</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/extention tube.png" alt="Extension Tubes" loading="lazy">
                     <h4>Extension Tubes &amp; Cubes</h4>
                     <p>Optical extension and imaging accessories</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                    <img src="images/vision-controller.png" alt="Vision Controller" loading="lazy">
                     <h4>Vision Controllers &amp; Drivers</h4>
                     <p>Controllers, drivers and system accessories</p>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                     <img src="images/Camera Mounting.png" alt="Customized Camera Mounts" loading="lazy">
                     <h4>Customized Mounts</h4>
                     <p>Mounting and integration accessories</p>
                 </div>
                 
-                <div class="product-card">
+                <div class="product-card" role="button" tabindex="0" aria-label="Enquire about this product">
                      <img src="images/Cables.png" alt="Cables" loading="lazy">
                     <h4>Cables</h4>
                     <p>communication accessories</p>
@@ -1998,6 +2112,83 @@ footer {
     </div>
 </section>
 
+
+<!-- PRODUCT-SPECIFIC ENQUIRY POPUP -->
+<div class="enquiry-modal" id="productEnquiryModal" aria-hidden="true">
+    <div class="enquiry-modal-content" role="dialog" aria-modal="true"
+         aria-labelledby="productEnquiryTitle">
+        <button type="button" class="enquiry-modal-close" id="closeProductEnquiry"
+                aria-label="Close enquiry form">&times;</button>
+
+        <h3 id="productEnquiryTitle">Product Enquiry</h3>
+        <p class="modal-intro">Share a few details so we can check the right product and get back to you.</p>
+        <div class="selected-product">
+            Selected product: <span id="selectedProductName">Product</span>
+        </div>
+
+        <form id="productEnquiryForm">
+            <div class="modal-two-col">
+                <div class="form-group">
+                    <label for="productMake">Preferred Make / Brand</label>
+                    <input type="text" id="productMake" placeholder="e.g. Siemens, Schneider, ABB">
+                </div>
+                <div class="form-group">
+                    <label for="productPartNo">Part Number / Model</label>
+                    <input type="text" id="productPartNo" placeholder="Enter part number, if available">
+                </div>
+            </div>
+
+            <div class="modal-two-col">
+                <div class="form-group">
+                    <label for="productQuantity">Quantity *</label>
+                    <input type="text" id="productQuantity" required placeholder="e.g. 2 Nos.">
+                </div>
+                <div class="form-group">
+                    <label for="productApplication">Application / Use</label>
+                    <input type="text" id="productApplication" placeholder="What will it be used for?">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="productCustomerName">Your Name *</label>
+                <input type="text" id="productCustomerName" required autocomplete="name"
+                       placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="productCompany">Company Name *</label>
+                <input type="text" id="productCompany" required autocomplete="organization"
+                       placeholder="Enter company name">
+            </div>
+
+            <div class="modal-two-col">
+                <div class="form-group">
+                    <label for="productPhone">Contact Number *</label>
+                    <input type="tel" id="productPhone" required autocomplete="tel"
+                           placeholder="Enter mobile number">
+                </div>
+                <div class="form-group">
+                    <label for="productEmail">Email Address</label>
+                    <input type="email" id="productEmail" autocomplete="email"
+                           placeholder="Enter email address">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="productExtraDetails">Additional Details</label>
+                <textarea id="productExtraDetails" rows="3"
+                          placeholder="Any specifications, ratings, dimensions or other requirements?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                <i class="fa-brands fa-whatsapp"></i> Send Product Enquiry on WhatsApp
+            </button>
+            <p class="privacy-note">WhatsApp will open with your enquiry message ready to send. Please press Send in WhatsApp.</p>
+        </form>
+    </div>
+</div>
+
+
 <!-- FOOTER -->
 <footer>
     <div class="container footer-content">
@@ -2089,6 +2280,86 @@ document.getElementById("enquiryForm").addEventListener("submit", function(event
 
     window.open(whatsappURL, "_blank");
 
+});
+
+
+// Product cards: open a product-specific enquiry form.
+const productEnquiryModal = document.getElementById("productEnquiryModal");
+const selectedProductName = document.getElementById("selectedProductName");
+const productEnquiryForm = document.getElementById("productEnquiryForm");
+const closeProductEnquiry = document.getElementById("closeProductEnquiry");
+
+function openProductEnquiry(card) {
+    const title = card.querySelector("h4");
+    selectedProductName.textContent = title ? title.textContent.trim() : "Product enquiry";
+    productEnquiryModal.classList.add("active");
+    productEnquiryModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    document.getElementById("productMake").focus();
+}
+
+function closeProductEnquiryModal() {
+    productEnquiryModal.classList.remove("active");
+    productEnquiryModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+document.querySelectorAll(".product-card").forEach(function(card) {
+    card.addEventListener("click", function() {
+        openProductEnquiry(card);
+    });
+
+    card.addEventListener("keydown", function(event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openProductEnquiry(card);
+        }
+    });
+});
+
+closeProductEnquiry.addEventListener("click", closeProductEnquiryModal);
+
+productEnquiryModal.addEventListener("click", function(event) {
+    if (event.target === productEnquiryModal) {
+        closeProductEnquiryModal();
+    }
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape" && productEnquiryModal.classList.contains("active")) {
+        closeProductEnquiryModal();
+    }
+});
+
+// Build a product-specific WhatsApp enquiry.
+productEnquiryForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const getValue = function(id) {
+        return document.getElementById(id).value.trim();
+    };
+
+    const message = [
+        "Hello Vionic Systems,",
+        "",
+        "I would like to enquire about the following product:",
+        "Product: " + selectedProductName.textContent,
+        "Preferred Make / Brand: " + (getValue("productMake") || "Not specified"),
+        "Part Number / Model: " + (getValue("productPartNo") || "Not specified"),
+        "Quantity: " + getValue("productQuantity"),
+        "",
+        "Customer Details:",
+        "Name: " + getValue("productCustomerName"),
+        "Company: " + getValue("productCompany"),
+        "Contact Number: " + getValue("productPhone"),
+        "Email: " + (getValue("productEmail") || "Not provided"),
+        "Additional Details: " + (getValue("productExtraDetails") || "None"),
+        "",
+        "Please share your price and availability."
+    ].join("\n");
+
+    const whatsappURL = "https://wa.me/917385398355?text=" + encodeURIComponent(message);
+    window.open(whatsappURL, "_blank", "noopener,noreferrer");
 });
 
 </script>
