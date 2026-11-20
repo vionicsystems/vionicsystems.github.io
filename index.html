@@ -657,15 +657,16 @@ header {
 
 /* BRAND LOGOS - UNIFORM SIZE */
 
-.brand-logos {
+
+/* PRODUCTS - 5 logos per row */
+#products .brand-logos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-items: center;
     justify-items: center;
+    align-items: center;
     gap: 25px;
     margin-bottom: 15px;
 }
-
 /* Tablet */
 @media (max-width: 768px) {
     .brand-logos {
@@ -1700,6 +1701,15 @@ section {
 #products .brand-logos img[alt="Optotune"] {
     width: 130px;
     height: 60px;
+}
+    /* BRANDS WE WORK WITH - Center incomplete rows */
+#brands .brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
 }
 </style>
 </head>
