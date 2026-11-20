@@ -659,12 +659,28 @@ header {
 /* BRAND LOGOS - UNIFORM SIZE */
 
 .brand-logos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    justify-items: center;
+    gap: 25px;
     margin-bottom: 15px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .brand-logos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .brand-logos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
 }
 
 .brand-logos > img,
@@ -1964,6 +1980,7 @@ section {
                     <img src="images/Omron-Logo.wine.svg" alt="Omron">
                     <img src="images/meanwell.svg" alt="Meanwell">
                     <img src="images/wago.svg" alt="Wago">
+                    <img src="images/Teknic.png" alt="Teknic">
                 </div>
 
             </div>
@@ -2325,6 +2342,7 @@ section {
                 <img src="images/Festo.svg" alt="Festo">
                 <img src="images/meanwell.svg" alt="Meanwell">
                 <img src="images/wago.svg" alt="Wago">
+                <img src="images/Teknic.png" alt="Teknic">
                 <img src="images/Omron-Logo.wine.svg" alt="Omron">
                 <img src="images/Logo_SICK_AG_2009.svg" alt="SICK">
                 <img src="images/cognex.svg" alt="Cognex">
