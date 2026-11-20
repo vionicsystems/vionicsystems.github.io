@@ -658,11 +658,10 @@ header {
 /* BRAND LOGOS - UNIFORM SIZE */
 
 
-/* PRODUCTS - 5 logos per row */
 #products .brand-logos {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 25px;
     margin-bottom: 15px;
