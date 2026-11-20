@@ -1472,6 +1472,48 @@ section {
     }
 }
 
+/* CONTACT FORM TWO-COLUMN LAYOUT */
+
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 18px;
+}
+
+.contact-form-grid .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form-grid .full-width {
+    grid-column: 1 / -1;
+}
+
+/* Mobile: Stack fields vertically */
+
+@media (max-width: 600px) {
+    .contact-form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form-grid .full-width {
+        grid-column: auto;
+    }
+}
+/* Center Your Requirement field */
+.contact-form-grid .full-width {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.contact-form-grid .full-width label {
+    display: block;
+    text-align: center;
+}
+
+.contact-form-grid .full-width textarea {
+    text-align: left;
+}
 </style>
 </head>
 
@@ -2178,36 +2220,41 @@ section {
                 <h3>Send an Enquiry</h3>
 
                 <form id="enquiryForm">
-
-                    <div class="form-group">
-                        <label for="name">Your Name *</label>
-                        <input type="text" id="name" required placeholder="Enter your name">
+                
+                    <div class="contact-form-grid">
+                
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" required placeholder="Enter your name">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" placeholder="Enter company name">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="phone">Contact Number *</label>
+                            <input type="tel" id="phone" required placeholder="Enter contact number">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter email address">
+                        </div>
+                
+                        <div class="form-group full-width">
+                            <label for="requirement">Your Requirement *</label>
+                            <textarea id="requirement" required
+                                placeholder="Tell us about your product or service requirement"></textarea>
+                        </div>
+                
                     </div>
-
-                    <div class="form-group">
-                        <label for="company">Company Name</label>
-                        <input type="text" id="company" placeholder="Enter company name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Contact Number *</label>
-                        <input type="tel" id="phone" required placeholder="Enter contact number">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter email address">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="requirement">Your Requirement *</label>
-                        <textarea id="requirement" required placeholder="Tell us about your product or service requirement"></textarea>
-                    </div>
-
+                
                     <button type="submit" class="btn btn-primary">
                         Send Enquiry on WhatsApp
                     </button>
-
+                
                 </form>
 
             </div>
