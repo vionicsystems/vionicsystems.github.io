@@ -906,10 +906,71 @@ header {
     background: var(--light);
 }
 
+/* CONTACT SECTION LAYOUT */
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 45px;
+    gap: 35px 45px;
+    align-items: start;
+}
+
+/* Contact information */
+.contact-info {
+    grid-column: 1;
+}
+
+/* Google Map */
+.contact-map {
+    grid-column: 2;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Enquiry form - centered below both columns */
+.contact-form {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 850px;
+    justify-self: center;
+    margin-top: 10px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(16,31,53,0.06);
+}
+
+/* Map appearance */
+.map-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(16,31,53,0.10);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    display: block;
+    border: 0;
+}
+
+/* Map button */
+.map-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.map-link:hover {
+    background: var(--orange);
 }
 
 .contact-info h3,
@@ -1783,6 +1844,33 @@ section {
 
 .map-link:hover {
     background: #f28b30;
+}
+    /* CONTACT MOBILE LAYOUT */
+@media (max-width: 768px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-info,
+    .contact-map,
+    .contact-form {
+        grid-column: 1;
+    }
+
+    .contact-map {
+        margin-top: 0;
+    }
+
+    .map-container iframe {
+        height: 320px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 22px;
+    }
 }
 </style>
 </head>
