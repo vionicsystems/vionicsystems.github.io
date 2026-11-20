@@ -675,91 +675,7 @@ header {
     display: block;
 }
     
-/* INDIVIDUAL LOGO SIZES IN PRODUCT CATEGORIES */
 
-.product-category .brand-logos img[alt="Schneider Electric"] {
-    width: 150px;
-    height: 60px;
-}
-.product-category .brand-logos img[alt="Schneider Electric"] {
-    width: 150px;
-    height: 60px;
-    object-fit: contain;
-}
-.product-category .brand-logos img[alt="Siemens"] {
-    width: 130px;
-    height: 65px;
-}
-
-.product-category .brand-logos img[alt="ABB"] {
-    width: 110px;
-    height: 65px;
-}
-
-.product-category .brand-logos img[alt="Mitsubishi Electric"] {
-    width: 160px;
-    height: 65px;
-}
-
-.product-category .brand-logos img[alt="Lauritz and Kundsen"] {
-    width: 120px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Delta"] {
-    width: 100px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Festo"] {
-    width: 110px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Meanwell"] {
-    width: 130px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Wago"] {
-    width: 110px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Omron"] {
-    width: 120px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="SICK"] {
-    width: 100px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Cognex"] {
-    width: 200px;
-    height: 100px;
-}
-
-.product-category .brand-logos img[alt="ThorLabs"] {
-    width: 120px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Basler"] {
-    width: 110px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Keyence"] {
-    width: 120px;
-    height: 60px;
-}
-
-.product-category .brand-logos img[alt="Optotune"] {
-    width: 130px;
-    height: 60px;
-}
 /* Logo with brand name */
 
 .brand-logo-item {
@@ -1723,6 +1639,62 @@ section {
 .brand-logos img[alt="Optotune"] {
     width: 130px;
     height: 60px;
+}
+    /* PRODUCT CATEGORY LOGO SIZE OVERRIDE */
+
+#products .product-category .category-brands .brand-logos > img {
+    width: 140px !important;
+    height: 65px !important;
+    object-fit: contain !important;
+    display: block;
+}
+
+/* Individual logo scaling */
+#products .product-category .category-brands .brand-logos img[src*="Schneider"] {
+    transform: scale(1.15);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="Siemens"] {
+    transform: scale(1.15);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="ABB"] {
+    transform: scale(1.20);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="Mitsubishi"] {
+    transform: scale(1.15);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="Delta"] {
+    transform: scale(1.20);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="L&T"] {
+    transform: scale(1.15);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="meanwell"] {
+    transform: scale(1.25);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="wago"] {
+    transform: scale(1.20);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="Omron"] {
+    transform: scale(1.20);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="SICK"] {
+    transform: scale(1.20);
+}
+
+#products .product-category .category-brands .brand-logos img[src*="Festo"] {
+    transform: scale(1.20);
+}
+    #products .product-category .category-brands .brand-logos img[src*="Cognex"] {
+    transform: scale(2.0);
 }
 </style>
 </head>
